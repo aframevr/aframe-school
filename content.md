@@ -16,12 +16,6 @@
 
 ## Prologue
 
-- Follow along the lessons.
-- Ask for help if you get stuck.
-- When possible, navigate the slides vertically to dive down.
-
-### Resources
-
 1. [Skim through the docs and FAQ](https://aframe.io/docs/)
 2. [Get help from peeps on Slack](https://aframe.io/community/#slack)
 3. [Ask questions on Stack Overflow](http://stackoverflow.com/questions/ask/?tags=aframe)
@@ -34,9 +28,10 @@
 
 ## Set Up a Web Development Environment
 
-*Set up text editor, local server, and ngrok tunnel to get started developing on the Web.*
+> Set up text editor, local server, and ngrok tunnel to get started developing on the Web.
 
-<img class="stretch" data-src="http://computers4business.com/wp/wp-content/uploads/2012/05/iStock_Web-Internet.jpg">
+If you're already set up or want to just play with A-Frame using embedded
+CodePens, then navigate &rarr;.
 
 [Documentation: Getting Started](https://aframe.io/docs/0.5.0/introduction/getting-started.html)
 
@@ -78,7 +73,52 @@ your computer's local server.
 
 <img class="stretch" data-src="https://cloud.githubusercontent.com/assets/8731271/24021852/30c39640-0a60-11e7-9e20-78249eb15339.png">
 
+---
+
+## Putting It All Together
+
+1. Start with [an HTML file](https://github.com/aframevr/aframe-boilerplate/blob/master/index.html) called `index.html`
+2. Start a local server in the same directory as that file
+3. Open the server's localhost URL in a browser
+4. Develop the HTML file with your text editor
+5. Start ngrok to access from other devices such as smartphones
+
 ------
+
+## Try A-Frame Examples
+
+> Try some examples with your headset on the [A-Frame
+> Homepage](https://aframe.io) and [A-Frame Blog](https://aframe.io/blog/).
+
+<img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24024467/e441beee-0a70-11e7-919a-ad81d63e7a9a.png">
+
+------
+
+## Hello, WebVR
+
+> Modify basic meshes through the HTML attributes (e.g., change colors,
+> positions, rotations, scale).  Play with the default controls. If you're
+> developing in an HTML file, you can copy-and-paste from the CodePen.
+> [Documentation](https://aframe.io/docs/master/guides/)
+
+<p data-height="400" data-theme-id="19139" data-slug-hash="BjygdO" data-default-tab="html,result" data-user="mozvr" data-embed-version="2" data-pen-title="Hello World â A-Frame" class="codepen">See the Pen <a href="http://codepen.io/mozvr/pen/BjygdO/">Hello World â A-Frame</a> by mozvr (<a href="http://codepen.io/mozvr">@mozvr</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+
+---
+
+## Hello, WebVR &mdash; Positioning
+
+> Play with the `position` HTML attributes.
+> [Documentation](https://aframe.io/docs/master/components/position.html)
+
+<img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24024888/16eafc68-0a74-11e7-9271-08654cc7e139.png">
+
+[CodePen](http://codepen.io/mozvr/pen/BjygdO)
+
+1. Move the cylinder left by *decreasing* the `position`'s X value.
+2. Move the box up by *increasing * the `position`'s Y value.
+3. Move the sphere back by *decreasing* the `position`'s Z value.
+
+---
 
 
 <!-- Lessons end here. -->
