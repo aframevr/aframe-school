@@ -198,5 +198,47 @@ components](https://github.com/donmccurdy/aframe-physics-system) from the
 
 ------
 
+## Entity-Component
+
+> Explore the entity-component pattern of A-Frame rather than using the wrapper
+> primitives (e.g., `<a-box>`). [Documentation](https://aframe.io/docs/0.5.0/core/)
+
+*Hello, WebVR* example with all the [A-Frame primitive
+elements](https://aframe.io/docs/0.5.0/primitives/) represented as
+`<a-entity>`s and decomposed to their fundamental components, including
+[geometry](https://aframe.io/docs/0.5.0/components/geometry.html) and
+[material](https://aframe.io/docs/0.5.0/components/material.html):
+
+<p data-height="400" data-theme-id="19139" data-slug-hash="QpOXNM" data-default-tab="html,result" data-user="mozvr" data-embed-version="2" data-pen-title="Decomposing Primitives â A-Frame" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/mozvr/pen/QpOXNM/">Decomposing Primitives â A-Frame</a> by mozillavr (<a href="http://codepen.io/mozvr">@mozvr</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+
+---
+
+## Entity-Component &mdash; Add a Light Source Sphere
+
+> Use the entity-component pattern to add a sphere that also acts as a point
+> light source. Mix together the geometry, material, and light components to
+> compose this type of object.
+>
+> `<a-entity>` +
+> [geometry](https://aframe.io/docs/0.5.0/components/geometry.html) +
+> [material](https://aframe.io/docs/0.5.0/components/material.html) +
+> [light](https://aframe.io/docs/0.5.0/components/light.html) = light source sphere.
+
+[Open CodePen](http://codepen.io/mozvr/pen/gmoYWJ)  <!-- .element: class="example-btn" -->
+
+<img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24060160/2c53a604-0b0f-11e7-9386-f83a3a9b4cfc.gif">>
+
+<!-- NOTES -->
+
+### Solution
+
+```html
+<a-entity geometry="primitive: sphere; radius: 0.2" material="shader: flat" light="type: point; color: #FFF" position="-4 3 -4">
+  <a-animation attribute="position" to="4 2.8 -4" direction="alternate" repeat="indefinite"></a-animation>
+</a-entity>
+```
+
+---
+
 
 <!-- Lessons end here. -->
