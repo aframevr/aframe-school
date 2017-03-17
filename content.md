@@ -3,7 +3,7 @@
 
 <div class="talk-title">
   <h1>A-Frame Workshop</h1>
-  <p>The interactive course for WebVR</p>
+  <p>An interactive course for WebVR</p>
   <p class="talk-info">
     <b><a href="https://aframe.io">aframe.io</a></b>
   </p>
@@ -105,9 +105,9 @@ your computer's local server.
 
 ---
 
-## Hello, WebVR &mdash; Positioning
+## Hello, WebVR &mdash; Position
 
-> Play with the `position` HTML attributes.
+> Change the `position` HTML attributes (which are in meters).
 > [Documentation](https://aframe.io/docs/master/components/position.html)
 
 <img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24024888/16eafc68-0a74-11e7-9271-08654cc7e139.png">
@@ -117,6 +117,21 @@ your computer's local server.
 1. Move the cylinder left by *decreasing* the `position`'s X value.
 2. Move the box up by *increasing * the `position`'s Y value.
 3. Move the sphere back by *decreasing* the `position`'s Z value.
+
+---
+
+## Hello, WebVR &mdash; Rotation
+
+> Change the `rotation` HTML attributes (which are in degrees). Use the
+> right-hand rule to spatially visualize rotation.
+> [Documentation](https://aframe.io/docs/master/components/rotation.html)
+
+<img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24025669/0d4bf9dc-0a79-11e7-99df-32628537493a.png">
+
+[CodePen](http://codepen.io/mozvr/pen/BjygdO)
+
+1. Rotate the cylinder around the X axis so we see the bottom.
+2. Rotate the box around the Y axis so the box is facing straight.
 
 ---
 
