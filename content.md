@@ -96,7 +96,7 @@ your computer's local server.
 
 ------
 
-## Play With *Hello, WebVR*
+## Play with *Hello, WebVR*
 
 > Modify basic meshes through the HTML attributes (e.g., change colors,
 > positions, rotations, scale).  Play with the default controls. If you're
@@ -107,7 +107,7 @@ your computer's local server.
 
 ---
 
-## Play With *Hello, WebVR* &mdash; Position
+## Play with *Hello, WebVR* &mdash; Position
 
 > Change the `position` HTML attributes (which are in meters).
 > [Documentation](https://aframe.io/docs/master/components/position.html)
@@ -122,7 +122,7 @@ your computer's local server.
 
 ---
 
-## Play With *Hello, WebVR* &mdash; Rotation
+## Play with *Hello, WebVR* &mdash; Rotation
 
 > Change the `rotation` HTML attributes (which are in degrees). Use the
 > right-hand rule to spatially visualize rotation.
@@ -137,7 +137,7 @@ your computer's local server.
 
 ---
 
-## Play With *Hello, WebVR* &mdash; Add New Primitives
+## Play with *Hello, WebVR* &mdash; Add New Primitives
 
 > Add new primitives the scene by adding more HTML elements to `<a-scene>`.
 > [Documentation](https://aframe.io/docs/0.5.0/primitives/)
@@ -198,7 +198,7 @@ components](https://github.com/donmccurdy/aframe-physics-system) from the
 
 ------
 
-## Entity-Component
+## Understand Entity-Component
 
 > Explore the entity-component pattern of A-Frame rather than using the wrapper
 > primitives (e.g., `<a-box>`). [Documentation](https://aframe.io/docs/0.5.0/core/)
@@ -213,7 +213,7 @@ elements](https://aframe.io/docs/0.5.0/primitives/) represented as
 
 ---
 
-## Entity-Component &mdash; Add a Light Source Sphere
+## Understand Entity-Component &mdash; Add a Light Source Sphere
 
 > Use the entity-component pattern to add a sphere that also acts as a point
 > light source. Mix together the geometry, material, and light components to
@@ -240,7 +240,7 @@ elements](https://aframe.io/docs/0.5.0/primitives/) represented as
 
 ---
 
-## Entity-Component &mdash; From the Registry
+## Understand Entity-Component &mdash; From the Registry
 
 > Include community components (e.g.,
 > [animation](https://www.npmjs.com/package/aframe-animation-component),
@@ -253,6 +253,130 @@ elements](https://aframe.io/docs/0.5.0/primitives/) represented as
 
 ------
 
+## Code with JavaScript
+
+> Use JavaScript and DOM APIs to programmatically modify the scene and its
+> entities. A-Frame is not just HTML; A-Frame provides access to JavaScript,
+> DOM APIs, and three.js underneath for full control.
+> [Documentation](https://aframe.io/docs/0.5.0/guides/using-javascript-and-dom-apis.html)
+
+In the following examples, open the CodePen, and work inside the **JavaScript**
+panel rather than the **HTML** panel. If you are working from a local HTML
+file, use the [browser's Developer Tools
+Console](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools)
+as a playground.
+
+<img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24063890/cfe5c158-0b1e-11e7-85f8-c6e57145905b.png">
+
+---
+
+## Code with JavaScript &mdash; Getting Entities
+
+> Use
+> [`document.querySelector()`](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector)
+> and
+> [`document.querySelectorAll()`](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll)
+> to get a reference to the scene and its entities.
+> [Documentation](https://aframe.io/docs/0.5.0/guides/using-javascript-and-dom-apis.html#getting-entities-by-querying-and-traversing)
+
+[Open CodePen](http://codepen.io/mozvr/pen/QpOXNM)  <!-- .element: class="example-btn" -->
+
+1. Get a reference to the `<a-scene>` element using `var sceneEl = document.querySelector('a-scene');`.
+2. Get a reference to all `<a-entity>` elements using `sceneEl.querySelectorAll('a-entity');`.
+3. Get a reference to the box entity using `sceneEl.querySelector('#box');`.
+4. Get a reference to the sphere and cylinder entities in one `.querySelectorAll()` call by using multi-element selector.
+5. Get a reference to the sphere and cylinder entities in one `.querySelectorAll()` call by adding and selecting HTML classes.
+
+------
+
+## Code with JavaScript &mdash; Modifying Entities
+
+> Use
+> [`Entity.setAttribute()`](https://aframe.io/docs/0.5.0/core/entity.html#setattribute-attr-value-componentattrvalue)
+> to modify entities after retrieving them from the previous exercise. [Documentation](https://aframe.io/docs/0.5.0/guides/using-javascript-and-dom-apis.html#modifying-an-entity)
+
+[Open CodePen](http://codepen.io/mozvr/pen/QpOXNM)  <!-- .element: class="example-btn" -->
+
+1. Change the box entity's `rotation` component.
+2. Change the cylinder entity's `geometry` component's `height` property.
+3. Change the sphere entity's `material` component's `metalness` property.
+4. Change the directional light entity's `light` component's `color` property.
+  **Clue:** Note that if lights are not defined in HTML, A-Frame will inject
+  default light entities.
+
+---
+
+## Code with JavaScript &mdash; Creating Entities
+
+> Use
+> [`document.createElement()`](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement)
+> to modify entities after retrieving them from the previous exercise. [Documentation](https://aframe.io/docs/0.5.0/guides/using-javascript-and-dom-apis.html#creating-an-entity-with-createelement)
+
+[Open CodePen](http://codepen.io/mozvr/pen/QpOXNM)  <!-- .element: class="example-btn" -->
+
+1. Create and add an entity with the [`light`](https://aframe.io/docs/0.5.0/components/light.html) component.
+2. In a JavaScript `for` loop, create and add 25 box entities with varying positions and scales.
+
+---
+
+## Code with JavaScript &mdash; Events
+
+> Use
+> [`.addEventListener()`](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
+> to register a handler function that will be called when an event is emitted.
+> Then manually emit that event to see that handler function execute.
+> [Documentation](https://aframe.io/docs/0.5.0/guides/using-javascript-and-dom-apis.html#events-and-event-listeners)
+
+[Open CodePen](http://codepen.io/mozvr/pen/QpOXNM)  <!-- .element: class="example-btn" -->
+
+1. Register an event listener on the box to listen to the `foo` event. In the
+   handler function, change the box's color.
+2. Emit the `foo` event with [`Entity.emit()`](https://aframe.io/docs/0.5.0/core/entity.html#emit-name-detail-bubbles) and see the box change its color.
+
+------
+
+## Add Tracked Hand Controls
+
+> If you have a VR headset (i.e., Vive or Rift + Touch), add tracked hand
+> controls with the [`hand-controls`
+> component](https://aframe.io/docs/0.5.0/components/hand-controls.html)
+
+1. Add two entities with `hand-controls`, one for the left hand and one for the right hand.
+2. Enter VR, see your hands, and press buttons to see the hands animate.
+
+------
+
+## Publish a Web Application
+
+> Deploy your HTML and JavaScript to the Web, and have it instantly be
+> available to the Internet. Make sure it's published with HTTPS as a
+> requirement for WebVR. If you publish an A-Frame site, please share it out
+> with your link!
+
+<div class="captioned-image-row small">
+  <div>
+    <img data-src="https://surge.sh/images/logos/svg/surge-logo.svg">
+    <a href="https://surge.sh">Surge</a>
+    <p>Simple, single-command web publishing. Publish HTML, CSS, and JS for free, without leaving the command line.</p>
+  </div>
+  <div>
+    <img data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Neocitieslogo.svg/1200px-Neocitieslogo.svg.png">
+    <a href="https://neocities.org">Neocities</a>
+    <p>Free web hosting and tools that allow anyone to create a website.</p>
+  </div>
+  <div>
+    <img data-src="https://assets-cdn.github.com/images/modules/logos_page/Octocat.png">
+    <a href="https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/">GitHub Pages</a>
+    <p>Websites for you and your projects, hosted directly from your GitHub repository. Just edit, push, and your changes are live.</p>
+  </div>
+</div>
+
+------
+
+
+<!-- Lessons end here. -->
+
+
 ## Stay Tuned
 
 <img class="stretch" data-src="https://cdn.hackaday.io/images/4174761433219325627.png">
@@ -260,6 +384,3 @@ elements](https://aframe.io/docs/0.5.0/primitives/) represented as
 [More lessons to come!](https://github.com/aframevr/aframe-workshop/wiki/Brainstorm-Lessons)
 
 See [the documentation](https://aframe.io/docs/) for more guides.
-
-
-<!-- Lessons end here. -->
