@@ -24,7 +24,7 @@ html:-moz-full-screen-ancestor {
 
 .reveal {
   font-family: "Fira Sans", Helvetica, sans-serif;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: normal;
   color: #444;
 }
@@ -99,7 +99,7 @@ html:-moz-full-screen-ancestor {
 .reveal ol,
 .reveal dl,
 .reveal ul {
-  display: inline-block;
+  display: block;
   text-align: left;
   margin: 0 0 0 1em; }
 
@@ -219,9 +219,9 @@ html:-moz-full-screen-ancestor {
 .reveal a {
   color: #24CAFF;
   text-decoration: none;
-  -webkit-transition: color .15s ease;
-  -moz-transition: color .15s ease;
-  transition: color .15s ease;
+  -webkit-transition: all .15s ease;
+  -moz-transition: all .15s ease;
+  transition: all .15s ease;
 }
 
 .reveal a:hover {
@@ -474,4 +474,16 @@ div.slide__boilerplate + video {
 .aframe-inspector-opened .slides {
   margin: 0 !important;
   zoom: 1 !important;
+}
+
+.reveal .example-btn {
+  background: #24CAFF;
+  border-radius: 5px;
+  color: #FAFAFA !important;
+  padding: 5px 10px !important;
+}
+
+.reveal .example-btn:hover {
+  background: #6FEAFF;
+  color: #FAFAFA !important;
 }

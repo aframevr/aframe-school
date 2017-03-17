@@ -112,11 +112,11 @@ your computer's local server.
 > Change the `position` HTML attributes (which are in meters).
 > [Documentation](https://aframe.io/docs/master/components/position.html)
 
-[Open CodePen](http://codepen.io/mozvr/pen/BjygdO)
-
 1. Move the cylinder left by *decreasing* the `position`'s X value.
 2. Move the box up by *increasing * the `position`'s Y value.
 3. Move the sphere back by *decreasing* the `position`'s Z value.
+
+[Open CodePen](http://codepen.io/mozvr/pen/BjygdO)  <!-- .element: class="example-btn" -->
 
 <img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24024888/16eafc68-0a74-11e7-9271-08654cc7e139.png">
 
@@ -128,10 +128,10 @@ your computer's local server.
 > right-hand rule to spatially visualize rotation.
 > [Documentation](https://aframe.io/docs/master/components/rotation.html)
 
-[Open CodePen](http://codepen.io/mozvr/pen/BjygdO)
-
 1. Rotate the cylinder around the X axis so we see the bottom.
 2. Rotate the box around the Y axis so the box is facing straight.
+
+[Open CodePen](http://codepen.io/mozvr/pen/BjygdO)  <!-- .element: class="example-btn" -->
 
 <img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24025669/0d4bf9dc-0a79-11e7-99df-32628537493a.png">
 
@@ -139,14 +139,16 @@ your computer's local server.
 
 ## Play With *Hello, WebVR* &mdash; Add New Primitives
 
-> Add new primitives the scene by adding more HTML elements with `<a-scene>`.
+> Add new primitives the scene by adding more HTML elements to `<a-scene>`.
 > [Documentation](https://aframe.io/docs/0.5.0/primitives/)
-
-[Open CodePen](http://codepen.io/mozvr/pen/BjygdO)
 
 1. Add [`<a-torus-knot>`](https://aframe.io/docs/0.5.0/primitives/a-torus-knot.html).
 2. Add [`<a-dodecahedron>`](https://aframe.io/docs/0.5.0/primitives/a-dodecahedron.html).
 3. Add [`<a-text>`](https://aframe.io/docs/0.5.0/primitives/a-text.html).
+
+[Open CodePen](http://codepen.io/mozvr/pen/BjygdO)  <!-- .element: class="example-btn" -->
+
+<img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24034590/130644b4-0aaf-11e7-9e18-72469d8fc2cc.png">
 
 ------
 
@@ -167,10 +169,10 @@ your computer's local server.
 > A-Frame components, including non-core components.
 > [Documentation](https://aframe.io/docs/master/guides/using-the-aframe-inspector.html)
 
-[Open Example](http://ngokevin.com/kframe/components/text-geometry/examples/vaporwave/)
-
 1. Select one of the entities with text in the example.
 2. Change the community [`text-geometry` component's](https://github.com/ngokevin/kframe/tree/master/components/text-geometry) `value` property.
+
+[Open Example](http://ngokevin.com/kframe/components/text-geometry/examples/vaporwave/)  <!-- .element: class="example-btn" -->
 
 <img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24028481/a55e0b62-0a8c-11e7-80dc-e4b391198446.png">
 
@@ -186,12 +188,15 @@ components](https://github.com/donmccurdy/aframe-physics-system) from the
 > the entity panel.
 > [Documentation](https://aframe.io/docs/master/guides/using-the-aframe-inspector.html)
 
-[Open Example](http://ngokevin.com/kframe/components/text-geometry/examples/vaporwave/)
-
 1. Add the `static-body` component to ground grid.
 2. Add the `dynamic-body` component to the torus knot (the purple pretzel in the back).
 3. Increase the Y-position of the torus knot to make it higher up.
 
+[Open Example](http://ngokevin.com/kframe/components/text-geometry/examples/vaporwave/)  <!-- .element: class="example-btn" -->
+
 <img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24028803/2e873d6c-0a8f-11e7-8e20-b47380b455b0.gif">
+
+------
+
 
 <!-- Lessons end here. -->
