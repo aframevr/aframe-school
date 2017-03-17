@@ -94,7 +94,7 @@ your computer's local server.
 
 ------
 
-## Hello, WebVR
+## Play With *Hello, WebVR*
 
 > Modify basic meshes through the HTML attributes (e.g., change colors,
 > positions, rotations, scale).  Play with the default controls. If you're
@@ -105,35 +105,60 @@ your computer's local server.
 
 ---
 
-## Hello, WebVR &mdash; Position
+## Play With *Hello, WebVR* &mdash; Position
 
 > Change the `position` HTML attributes (which are in meters).
 > [Documentation](https://aframe.io/docs/master/components/position.html)
 
-<img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24024888/16eafc68-0a74-11e7-9271-08654cc7e139.png">
-
-[CodePen](http://codepen.io/mozvr/pen/BjygdO)
+[Open CodePen](http://codepen.io/mozvr/pen/BjygdO)
 
 1. Move the cylinder left by *decreasing* the `position`'s X value.
 2. Move the box up by *increasing * the `position`'s Y value.
 3. Move the sphere back by *decreasing* the `position`'s Z value.
 
+<img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24024888/16eafc68-0a74-11e7-9271-08654cc7e139.png">
+
 ---
 
-## Hello, WebVR &mdash; Rotation
+## Play With *Hello, WebVR* &mdash; Rotation
 
 > Change the `rotation` HTML attributes (which are in degrees). Use the
 > right-hand rule to spatially visualize rotation.
 > [Documentation](https://aframe.io/docs/master/components/rotation.html)
 
-<img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24025669/0d4bf9dc-0a79-11e7-99df-32628537493a.png">
-
-[CodePen](http://codepen.io/mozvr/pen/BjygdO)
+[Open CodePen](http://codepen.io/mozvr/pen/BjygdO)
 
 1. Rotate the cylinder around the X axis so we see the bottom.
 2. Rotate the box around the Y axis so the box is facing straight.
 
+<img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24025669/0d4bf9dc-0a79-11e7-99df-32628537493a.png">
+
+------
+
+## Use the A-Frame Inspector
+
+> A-Frame comes with a visual inspector. Hit `<ctrl> + <alt> + i` on any
+> A-Frame scene. Try the Inspector on some of the [homepage
+> examples](https://aframe.io/examples/).
+> [Documentation](https://aframe.io/docs/master/guides/using-the-aframe-inspector.html)
+
+<img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24028372/9998ad60-0a8b-11e7-93d4-ff134bee05ca.gif">
+
 ---
+
+## Use the A-Frame Inspector &mdash; Change Component Values
+
+> The Inspector knows about all A-Frame components, including non-core
+> components. From the right-hand entity panel, we can modify everything about
+> an entity through its components.
+> [Documentation](https://aframe.io/docs/master/guides/using-the-aframe-inspector.html)
+
+[Open Example](http://ngokevin.com/kframe/components/text-geometry/examples/vaporwave/)
+
+1. Select one of the entities with text in the example.
+2. Change the community [`text-geometry` component's](https://github.com/ngokevin/kframe/tree/master/components/text-geometry) `value` property.
+
+<img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24028481/a55e0b62-0a8c-11e7-80dc-e4b391198446.png">
 
 
 <!-- Lessons end here. -->
