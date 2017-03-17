@@ -1,13 +1,13 @@
 {
-  "name": "aframe-workshop-kit",
+  "name": "aframe-workshop",
   "version": "1.0.0",
-  "description": "Official workshop materials for teaching and learning A-Frame through lessons.",
+  "description": "A-Frame interactive tutorial.",
   "scripts": {
     "start": "live-server"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ngokevin/aframe-presentation-kit.git"
+    "url": "git+https://github.com/aframevr/aframe-workshop.git"
   },
   "keywords": [
     "aframe",
@@ -18,9 +18,9 @@
   "author": "A-Frame Authors",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/aframevr/aframe-workshop-kit/issues"
+    "url": "https://github.com/aframevr/aframe-workshop/issues"
   },
-  "homepage": "https://github.com/aframevr/aframe-workshop-kit#readme",
+  "homepage": "https://github.com/aframevr/aframe-workshop#readme",
   "devDependencies": {
     "live-server": "^1.2.0"
   }
