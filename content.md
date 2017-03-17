@@ -351,7 +351,7 @@ as a playground.
 > Deploy your HTML and JavaScript to the Web, and have it instantly be
 > available to the Internet. Make sure it's published with HTTPS as a
 > requirement for WebVR. If you publish an A-Frame site, please share it out
-> with your link!
+> with your link! [Guide](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/Publishing_your_website)
 
 <div class="captioned-image-row small">
   <div>
