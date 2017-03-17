@@ -87,8 +87,10 @@ your computer's local server.
 
 ## Try A-Frame Examples
 
-> Try some examples with your headset on the [A-Frame
-> Homepage](https://aframe.io) and [A-Frame Blog](https://aframe.io/blog/).
+> Try some examples (ideally with a headset) on the [A-Frame
+> Homepage](https://aframe.io) and [A-Frame Blog](https://aframe.io/blog/). See
+> [webvr.rocks](https://webvr.rocks) for information on setting up WebVR with
+> your headset.
 
 <img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24024467/e441beee-0a70-11e7-919a-ad81d63e7a9a.png">
 
@@ -137,8 +139,8 @@ your computer's local server.
 
 ## Use the A-Frame Inspector
 
-> A-Frame comes with a visual inspector. Hit `<ctrl> + <alt> + i` on any
-> A-Frame scene. Try the Inspector on some of the [homepage
+> Open the A-Frame Inspector. Hit `<ctrl> + <alt> + i` on *any* A-Frame scene
+> to pop open a visual editor.  Try the Inspector on some of the [homepage
 > examples](https://aframe.io/examples/).
 > [Documentation](https://aframe.io/docs/master/guides/using-the-aframe-inspector.html)
 
@@ -148,9 +150,8 @@ your computer's local server.
 
 ## Use the A-Frame Inspector &mdash; Change Component Values
 
-> The Inspector knows about all A-Frame components, including non-core
-> components. From the right-hand entity panel, we can modify everything about
-> an entity through its components.
+> Modify an entity by modifying its components. The Inspector knows about all
+> A-Frame components, including non-core components.
 > [Documentation](https://aframe.io/docs/master/guides/using-the-aframe-inspector.html)
 
 [Open Example](http://ngokevin.com/kframe/components/text-geometry/examples/vaporwave/)
@@ -160,5 +161,24 @@ your computer's local server.
 
 <img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24028481/a55e0b62-0a8c-11e7-80dc-e4b391198446.png">
 
+---
+
+## Use the A-Frame Inspector &mdash; Attach Components from the Registry
+
+> Use [physics
+components](https://github.com/donmccurdy/aframe-physics-system) from the
+[Registry](https://aframe.io/registry/) to add gravity and collisions.
+> The Registry is a curated collection of A-Frame components. And the Inspector
+> is hooked up to the Registry so we can add components from the Registry in
+> the entity panel.
+> [Documentation](https://aframe.io/docs/master/guides/using-the-aframe-inspector.html)
+
+[Open Example](http://ngokevin.com/kframe/components/text-geometry/examples/vaporwave/)
+
+1. Add the `static-body` component to ground grid.
+2. Add the `dynamic-body` component to the torus knot (the purple pretzel in the back).
+3. Increase the Y-position of the torus knot to make it higher up.
+
+<img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24028803/2e873d6c-0a8f-11e7-8e20-b47380b455b0.gif">
 
 <!-- Lessons end here. -->

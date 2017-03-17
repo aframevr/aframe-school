@@ -137,7 +137,7 @@ html:-moz-full-screen-ancestor {
   position: relative;
   width: 100%;
   margin: 20px auto;
-  padding: 5px 25px;
+  padding: 5px 15px;
   font-style: italic;
   background: rgba(255, 255, 255, 0.05);
   box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2); }
@@ -454,10 +454,6 @@ div.slide__boilerplate p {
 div.slide__boilerplate + video {
   opacity: 0.5;
   z-index: 0;
-}
-
-.reveal li {
-  margin: 30px 0;
 }
 
 .reveal .icon-title {
