@@ -240,5 +240,26 @@ elements](https://aframe.io/docs/0.5.0/primitives/) represented as
 
 ---
 
+## Entity-Component &mdash; From the Registry
+
+> Include community components (e.g.,
+> [animation](https://www.npmjs.com/package/aframe-animation-component),
+> [particle-system](https://www.npmjs.com/package/aframe-particle-system-component),
+> [rain](https://www.npmjs.com/package/aframe-rain)) from the [A-Frame
+> Registry](https://aframe.io/registry/) via a `<script>` tag and use them from
+> HTML. [Documentation](https://github.com/aframevr/aframe-registry#usage)
+
+<p data-height="400" data-theme-id="19139" data-slug-hash="yMpyJr" data-default-tab="html,result" data-user="mozvr" data-embed-version="2" data-pen-title="Using the Registry â A-Frame Workshop" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/mozvr/pen/yMpyJr/">Using the Registry â A-Frame Workshop</a> by mozillavr (<a href="http://codepen.io/mozvr">@mozvr</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+
+------
+
+## Stay Tuned
+
+<img class="stretch" data-src="https://cdn.hackaday.io/images/4174761433219325627.png">
+
+[More lessons to come!](https://github.com/aframevr/aframe-workshop/wiki/Brainstorm-Lessons)
+
+See [the documentation](https://aframe.io/docs/) for more guides.
+
 
 <!-- Lessons end here. -->
