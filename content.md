@@ -3,7 +3,7 @@
 
 <div class="talk-title">
   <h1>A-Frame Workshop</h1>
-  <p>An interactive course for WebVR</p>
+  <h3>An interactive course for WebVR</h3>
   <p class="talk-info">
     <b><a href="https://aframe.io">aframe.io</a></b>
   </p>
@@ -134,6 +134,19 @@ your computer's local server.
 2. Rotate the box around the Y axis so the box is facing straight.
 
 <img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24025669/0d4bf9dc-0a79-11e7-99df-32628537493a.png">
+
+---
+
+## Play With *Hello, WebVR* &mdash; Add New Primitives
+
+> Add new primitives the scene by adding more HTML elements with `<a-scene>`.
+> [Documentation](https://aframe.io/docs/0.5.0/primitives/)
+
+[Open CodePen](http://codepen.io/mozvr/pen/BjygdO)
+
+1. Add [`<a-torus-knot>`](https://aframe.io/docs/0.5.0/primitives/a-torus-knot.html).
+2. Add [`<a-dodecahedron>`](https://aframe.io/docs/0.5.0/primitives/a-dodecahedron.html).
+3. Add [`<a-text>`](https://aframe.io/docs/0.5.0/primitives/a-text.html).
 
 ------
 

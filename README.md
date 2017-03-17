@@ -1,11 +1,14 @@
 # aframe-workshop
 
-Official [A-Frame](https://aframe.io) interactive tutorial. Can either be
-self-led or be used as part of a hands-on event (e.g., tutorial or workshop).
-If you are holding an event, also check out the [A-Frame Presentation
-Kit](https://github.com/aframevr/aframe-presentation-kit).
+> Work in progress.
 
-[VIEW LESSONS](https://aframe.io/aframe-workshop-kit/#/)
+Official [A-Frame](https://aframe.io) interactive tutorial.
+
+Can either be self-led or be used as part of a hands-on event (e.g., tutorial
+or workshop).  If you are holding an event, also check out the [A-Frame
+Presentation Kit](https://github.com/aframevr/aframe-presentation-kit).
+
+[VIEW LESSONS](https://aframe.io/aframe-workshop/)
 
 ## Local Development
 
