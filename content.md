@@ -363,7 +363,9 @@ as a playground.
 
 > If you have a VR headset (i.e., Vive or Rift + Touch), add tracked hand
 > controls with the [`hand-controls`
-> component](https://aframe.io/docs/0.5.0/components/hand-controls.html)
+> component](https://aframe.io/docs/0.5.0/components/hand-controls.html). If
+> you are at a live event or workshop and have access to the VR headset, leave
+> this as homework exercises.
 
 1. Add two entities with `hand-controls`, one for the left hand and one for the right hand.
 2. Enter VR, see your hands, and press buttons to see the hands animate.
