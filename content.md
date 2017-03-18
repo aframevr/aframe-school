@@ -335,6 +335,30 @@ as a playground.
 
 ------
 
+## Add Gaze-Based Cursor Interactions
+
+> Use the gaze-based [`cursor`
+> component](https://aframe.io/docs/0.5.0/components/cursor.html) to provide
+> the ability to interact with entities (primarily for smartphones). This isn't
+> a great interaction mechanism, but runs through basic interaction using
+> events and for people that don't have a real headset with controllers on
+> hand.
+> [Guide](https://aframe.io/docs/0.5.0/guides/building-with-components.html)
+
+1. Explicitly define a
+   [`camera`](https://aframe.io/docs/0.5.0/components/camera.html) entity.
+   Previously A-Frame was providing a default camera.
+2. Add a [`cursor`](https://aframe.io/docs/0.5.0/components/cursor.html) entity
+   as a child of the camera entity.
+3. Add an event listener to one of the entities to change (e.g., color,
+   position, rotation) on the `click`, `mouseenter`, or `mouseleave` events.
+4. Move the camera to look at an entity and "click" (stare for a second on
+   mobile), and see the entity react.
+
+<p data-height="400" data-theme-id="19139" data-slug-hash="QpOXNM" data-default-tab="html,result" data-user="mozvr" data-embed-version="2" data-pen-title="Decomposing Primitives â A-Frame Workshop" class="codepen">See the Pen <a href="http://codepen.io/mozvr/pen/QpOXNM/">Decomposing Primitives â A-Frame Workshop</a> by mozillavr (<a href="http://codepen.io/mozvr">@mozvr</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+
+------
+
 ## Add Tracked Hand Controls
 
 > If you have a VR headset (i.e., Vive or Rift + Touch), add tracked hand
@@ -343,6 +367,22 @@ as a playground.
 
 1. Add two entities with `hand-controls`, one for the left hand and one for the right hand.
 2. Enter VR, see your hands, and press buttons to see the hands animate.
+
+---
+
+## Add Tracked Hand Controls &mdash; Add Teleport Controls
+
+> Add
+> [teleport-controls](https://github.com/fernandojsg/aframe-teleport-controls)
+> to the left hand.
+
+---
+
+## Add Tracked Hand Controls &mdash; Add Controller Cursor
+
+> Add
+> [controller-cursor](https://github.com/bryik/aframe-controller-cursor-component)
+> to the right hand.
 
 ------
 
