@@ -287,7 +287,7 @@ as a playground.
 4. Get a reference to the sphere and cylinder entities in one `.querySelectorAll()` call by using multi-element selector.
 5. Get a reference to the sphere and cylinder entities in one `.querySelectorAll()` call by adding and selecting HTML classes.
 
-------
+---
 
 ## Code with JavaScript &mdash; Modifying Entities
 
