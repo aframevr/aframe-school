@@ -16,9 +16,21 @@
 
 ## Prologue
 
+The Workshop will help get you started with a development environment. From
+there, the Workshop will give you step-by-step exercises to help you jump into
+WebVR!
+
+Note that the Workshop has sections going &larr; and &rarr;, but also
+subsections going **&uarr; and &darr;**:
+
+<img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24115390/6d4468b2-0d60-11e7-939c-83135c9334b9.png">
+
+### Resources
+
 1. [Skim through the docs and FAQ](https://aframe.io/docs/)
 2. [Get help from peeps on Slack](https://aframe.io/community/#slack)
 3. [Ask questions on Stack Overflow](http://stackoverflow.com/questions/ask/?tags=aframe)
+4. If you are in a live workshop event, please raise your hand if you have a question!
 
 
 <!-- Lessons start below. -->
@@ -56,7 +68,7 @@ You'll need a local HTTP server to serve your files to the browser.
   </div>
   <div>
     <img data-src="https://www.python.org/static/opengraph-icon-200x200.png">
-    <code>python -m SimpleHTTPServer</code>
+    <code>python -m SimpleHTTPServer 8080</code>
   </div>
   <div>
     <img data-src="https://www.echosteg.com/images/blog/standard/nodejs_logo.png">
@@ -68,8 +80,13 @@ You'll need a local HTTP server to serve your files to the browser.
 
 ## Set Up ngrok
 
-You'll want [ngrok](https://ngrok.com) to easily tunnel requests from other devices to
-your computer's local server.
+> Optionally, you can use [ngrok](https://ngrok.com/) to help develop
+> your A-Frame project on a smartphone.
+
+1. Download and unzip [ngrok](https://ngrok.com/download/) anywhere
+2. Run ngrok, providing it the port number of your local server (`./ngrok http 8080`)
+3. In the output, ngrok will give you a URL with a bunch of letters and numbers (e.g., `https://abcdef123456.ngrok.io`)
+4. Open that URL on another device on any network (such as a smartphone or another computer)
 
 <img class="stretch" data-src="https://cloud.githubusercontent.com/assets/8731271/24021852/30c39640-0a60-11e7-9e20-78249eb15339.png">
 
@@ -79,9 +96,9 @@ your computer's local server.
 
 1. Start with [an HTML file](https://github.com/aframevr/aframe-boilerplate/blob/master/index.html) called `index.html`
 2. Start a local server in the same directory as that file
-3. Open the server's localhost URL in a browser
-4. Develop the HTML file with your text editor
-5. Start ngrok to access from other devices such as smartphones
+3. Open the server's localhost URL in a browser (e.g., `http://localhost:8000`)
+4. Develop the HTML file with your text editor and refresh your browser to see changes
+5. Optionally, use ngrok to let your smartphone access your project
 
 ------
 
@@ -112,9 +129,9 @@ your computer's local server.
 > Change the `position` HTML attributes (which are in meters).
 > [Documentation](https://aframe.io/docs/master/components/position.html)
 
-1. Move the cylinder left by *decreasing* the `position`'s X value.
-2. Move the box up by *increasing * the `position`'s Y value.
-3. Move the sphere back by *decreasing* the `position`'s Z value.
+1. Move the cylinder left by *decreasing* the `position`'s X value
+2. Move the box up by *increasing * the `position`'s Y value
+3. Move the sphere back by *decreasing* the `position`'s Z value
 
 [Open CodePen](http://codepen.io/mozvr/pen/BjygdO)  <!-- .element: class="example-btn" -->
 
@@ -128,8 +145,8 @@ your computer's local server.
 > right-hand rule to spatially visualize rotation.
 > [Documentation](https://aframe.io/docs/master/components/rotation.html)
 
-1. Rotate the cylinder around the X axis so we see the bottom.
-2. Rotate the box around the Y axis so the box is facing straight.
+1. Rotate the cylinder around the X axis so we see the bottom
+2. Rotate the box around the Y axis so the box is facing straight
 
 [Open CodePen](http://codepen.io/mozvr/pen/BjygdO)  <!-- .element: class="example-btn" -->
 
@@ -142,9 +159,9 @@ your computer's local server.
 > Add new primitives the scene by adding more HTML elements to `<a-scene>`.
 > [Documentation](https://aframe.io/docs/0.5.0/primitives/)
 
-1. Add [`<a-torus-knot>`](https://aframe.io/docs/0.5.0/primitives/a-torus-knot.html).
-2. Add [`<a-dodecahedron>`](https://aframe.io/docs/0.5.0/primitives/a-dodecahedron.html).
-3. Add [`<a-text>`](https://aframe.io/docs/0.5.0/primitives/a-text.html).
+1. Add [`<a-torus-knot>`](https://aframe.io/docs/0.5.0/primitives/a-torus-knot.html)
+2. Add [`<a-dodecahedron>`](https://aframe.io/docs/0.5.0/primitives/a-dodecahedron.html)
+3. Add [`<a-text>`](https://aframe.io/docs/0.5.0/primitives/a-text.html)
 
 [Open CodePen](http://codepen.io/mozvr/pen/BjygdO)  <!-- .element: class="example-btn" -->
 
@@ -169,8 +186,8 @@ your computer's local server.
 > A-Frame components, including non-core components.
 > [Documentation](https://aframe.io/docs/master/guides/using-the-aframe-inspector.html)
 
-1. Select one of the entities with text in the example.
-2. Change the community [`text-geometry` component's](https://github.com/ngokevin/kframe/tree/master/components/text-geometry) `value` property.
+1. Select one of the entities with text in the example
+2. Change the community [`text-geometry` component's](https://github.com/ngokevin/kframe/tree/master/components/text-geometry) `value` property
 
 [Open Example](http://ngokevin.com/kframe/components/text-geometry/examples/vaporwave/)  <!-- .element: class="example-btn" -->
 
@@ -188,13 +205,43 @@ components](https://github.com/donmccurdy/aframe-physics-system) from the
 > the entity panel.
 > [Documentation](https://aframe.io/docs/master/guides/using-the-aframe-inspector.html)
 
-1. Add the `static-body` component to ground grid.
-2. Add the `dynamic-body` component to the torus knot (the purple pretzel in the back).
-3. Increase the Y-position of the torus knot to make it higher up.
+1. Add the `static-body` component to ground grid
+2. Add the `dynamic-body` component to the torus knot (the purple pretzel in the back)
+3. Increase the Y-position of the torus knot to make it higher up
 
 [Open Example](http://ngokevin.com/kframe/components/text-geometry/examples/vaporwave/)  <!-- .element: class="example-btn" -->
 
 <img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24028803/2e873d6c-0a8f-11e7-8e20-b47380b455b0.gif">
+
+------
+
+## Add Textures
+
+> Add image textures to meshes to give them more appearance. Fill in the `src`
+> HTML attributes with image URLs (ideally hosted with HTTPS and supports CORS,
+> like [Imgur](https://imgur.com)). Find your own images online like from
+> [textures.com](https://textures.com).
+> [Guide](https://aframe.io/docs/0.5.0/guides/#applying-an-image-texture).
+> [Documentation](https://aframe.io/docs/0.5.0/components/material.html#textures).
+
+1. Add an image texture to the ground, `<a-plane>` ([Sample](https://cdn.aframe.io/a-painter/images/floor.jpg))
+2. Add image textures to `<a-box>`es ([Sample](https://i.imgur.com/mYmmbrp.jpg))
+3. Add an image texture to `<a-sphere>`
+4. Add an image texture to `<a-cone>`
+5. Add an image texture to the background, `<a-sky>` ([Sample](https://cdn.aframe.io/360-image-gallery-boilerplate/img/sechelt.jpg)). Use 360&deg; images [like from FLickr](https://www.flickr.com/groups/equirectangular/)
+
+<p data-height="300" data-theme-id="19139" data-slug-hash="gmvdwW" data-default-tab="html,result" data-user="mozvr" data-embed-version="2" data-pen-title="Add Textures (Base) â A-Frame Workshop" class="codepen">See the Pen <a href="http://codepen.io/mozvr/pen/gmvdwW/">Add Textures (Base) â A-Frame Workshop</a> by mozillavr (<a href="http://codepen.io/mozvr">@mozvr</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+
+------
+
+## Add 3D Models
+
+> Add 3D models created through 3D modeling programs rather than basic 3D
+> primitives. Use glTF (`<a-gltf-model>`) or OBJ (`<a-obj-model>`) 3D file
+> formats. [Where to Find 3D
+> Models](https://aframe.io/docs/0.5.0/introduction/faq.html#where-can-i-find-assets).
+
+<p data-height="300" data-theme-id="19139" data-slug-hash="MpQPKY" data-default-tab="html,result" data-user="mozvr" data-embed-version="2" data-pen-title="Add 3D Models â A-Frame Workshop" class="codepen">See the Pen <a href="http://codepen.io/mozvr/pen/MpQPKY/">Add 3D Models â A-Frame Workshop</a> by mozillavr (<a href="http://codepen.io/mozvr">@mozvr</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 
 ------
 
@@ -245,9 +292,9 @@ elements](https://aframe.io/docs/0.5.0/primitives/) represented as
 > Include community components (e.g.,
 > [animation](https://www.npmjs.com/package/aframe-animation-component),
 > [particle-system](https://www.npmjs.com/package/aframe-particle-system-component),
-> [rain](https://www.npmjs.com/package/aframe-rain)) from the [A-Frame
-> Registry](https://aframe.io/registry/) via a `<script>` tag and use them from
-> HTML. [Documentation](https://github.com/aframevr/aframe-registry#usage)
+> from the [A-Frame Registry](https://aframe.io/registry/) via a `<script>` tag
+> and use them from HTML.
+> [Documentation](https://github.com/aframevr/aframe-registry#usage)
 
 <p data-height="400" data-theme-id="19139" data-slug-hash="yMpyJr" data-default-tab="html,result" data-user="mozvr" data-embed-version="2" data-pen-title="Using the Registry â A-Frame Workshop" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/mozvr/pen/yMpyJr/">Using the Registry â A-Frame Workshop</a> by mozillavr (<a href="http://codepen.io/mozvr">@mozvr</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 
@@ -281,11 +328,11 @@ as a playground.
 
 [Open CodePen](http://codepen.io/mozvr/pen/QpOXNM)  <!-- .element: class="example-btn" -->
 
-1. Get a reference to the `<a-scene>` element using `var sceneEl = document.querySelector('a-scene');`.
-2. Get a reference to all `<a-entity>` elements using `sceneEl.querySelectorAll('a-entity');`.
-3. Get a reference to the box entity using `sceneEl.querySelector('#box');`.
-4. Get a reference to the sphere and cylinder entities in one `.querySelectorAll()` call by using multi-element selector.
-5. Get a reference to the sphere and cylinder entities in one `.querySelectorAll()` call by adding and selecting HTML classes.
+1. Get a reference to the `<a-scene>` element using `var sceneEl = document.querySelector('a-scene');`
+2. Get a reference to all `<a-entity>` elements using `sceneEl.querySelectorAll('a-entity');`
+3. Get a reference to the box entity using `sceneEl.querySelector('#box');`
+4. Get a reference to the sphere and cylinder entities in one `.querySelectorAll()` call by using multi-element selector
+5. Get a reference to the sphere and cylinder entities in one `.querySelectorAll()` call by adding and selecting HTML classes
 
 ---
 
@@ -297,12 +344,12 @@ as a playground.
 
 [Open CodePen](http://codepen.io/mozvr/pen/QpOXNM)  <!-- .element: class="example-btn" -->
 
-1. Change the box entity's `rotation` component.
-2. Change the cylinder entity's `geometry` component's `height` property.
-3. Change the sphere entity's `material` component's `metalness` property.
-4. Change the directional light entity's `light` component's `color` property.
+1. Change the box entity's `rotation` component
+2. Change the cylinder entity's `geometry` component's `height` property
+3. Change the sphere entity's `material` component's `metalness` property
+4. Change the directional light entity's `light` component's `color` property
   **Clue:** Note that if lights are not defined in HTML, A-Frame will inject
-  default light entities.
+  default light entities
 
 ---
 
@@ -314,8 +361,8 @@ as a playground.
 
 [Open CodePen](http://codepen.io/mozvr/pen/QpOXNM)  <!-- .element: class="example-btn" -->
 
-1. Create and add an entity with the [`light`](https://aframe.io/docs/0.5.0/components/light.html) component.
-2. In a JavaScript `for` loop, create and add 25 box entities with varying positions and scales.
+1. Create and add an entity with the [`light`](https://aframe.io/docs/0.5.0/components/light.html) component
+2. In a JavaScript `for` loop, create and add 25 box entities with varying positions and scales
 
 ---
 
@@ -330,8 +377,8 @@ as a playground.
 [Open CodePen](http://codepen.io/mozvr/pen/QpOXNM)  <!-- .element: class="example-btn" -->
 
 1. Register an event listener on the box to listen to the `foo` event. In the
-   handler function, change the box's color.
-2. Emit the `foo` event with [`Entity.emit()`](https://aframe.io/docs/0.5.0/core/entity.html#emit-name-detail-bubbles) and see the box change its color.
+   handler function, change the box's color
+2. Emit the `foo` event with [`Entity.emit()`](https://aframe.io/docs/0.5.0/core/entity.html#emit-name-detail-bubbles) and see the box change its color
 
 ------
 
@@ -347,15 +394,15 @@ as a playground.
 
 1. Explicitly define a
    [`camera`](https://aframe.io/docs/0.5.0/components/camera.html) entity.
-   Previously A-Frame was providing a default camera.
+   Previously A-Frame was providing a default camera
 2. Add a [`cursor`](https://aframe.io/docs/0.5.0/components/cursor.html) entity
-   as a child of the camera entity.
+   as a child of the camera entity
 3. Add an event listener to one of the entities to change (e.g., color,
-   position, rotation) on the `click`, `mouseenter`, or `mouseleave` events.
+   position, rotation) on the `click`, `mouseenter`, or `mouseleave` events
 4. Move the camera to look at an entity and "click" (stare for a second on
-   mobile), and see the entity react.
+   mobile), and see the entity react
 
-<p data-height="400" data-theme-id="19139" data-slug-hash="QpOXNM" data-default-tab="html,result" data-user="mozvr" data-embed-version="2" data-pen-title="Decomposing Primitives â A-Frame Workshop" class="codepen">See the Pen <a href="http://codepen.io/mozvr/pen/QpOXNM/">Decomposing Primitives â A-Frame Workshop</a> by mozillavr (<a href="http://codepen.io/mozvr">@mozvr</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="300" data-theme-id="19139" data-slug-hash="QpOXNM" data-default-tab="html,result" data-user="mozvr" data-embed-version="2" data-pen-title="Decomposing Primitives â A-Frame Workshop" class="codepen">See the Pen <a href="http://codepen.io/mozvr/pen/QpOXNM/">Decomposing Primitives â A-Frame Workshop</a> by mozillavr (<a href="http://codepen.io/mozvr">@mozvr</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 
 ------
 
@@ -367,8 +414,8 @@ as a playground.
 > you are at a live event or workshop and have access to the VR headset, leave
 > this as homework exercises.
 
-1. Add two entities with `hand-controls`, one for the left hand and one for the right hand.
-2. Enter VR, see your hands, and press buttons to see the hands animate.
+1. Add two entities with `hand-controls`, one for the left hand and one for the right hand
+2. Enter VR, see your hands, and press buttons to see the hands animate
 
 ---
 

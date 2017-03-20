@@ -101,7 +101,7 @@ html:-moz-full-screen-ancestor {
 .reveal ul {
   display: block;
   text-align: left;
-  margin: 0 0 0 1em; }
+  margin: 1em 0 1em 1em; }
 
 .reveal ol {
   list-style-type: decimal; }
