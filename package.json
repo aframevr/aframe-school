@@ -1,26 +1,27 @@
 {
-  "name": "aframe-workshop",
+  "name": "aframe-school",
   "version": "1.0.0",
-  "description": "A-Frame interactive tutorial.",
+  "description": "Interactive workshop and lessons for learning A-Frame and WebVR.",
   "scripts": {
     "start": "live-server"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aframevr/aframe-workshop.git"
+    "url": "git+https://github.com/aframevr/aframe-school.git"
   },
   "keywords": [
     "aframe",
-    "workshop",
+    "school",
     "vr",
-    "webvr"
+    "webvr",
+    "workshop"
   ],
   "author": "A-Frame Authors",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/aframevr/aframe-workshop/issues"
+    "url": "https://github.com/aframevr/aframe-school/issues"
   },
-  "homepage": "https://github.com/aframevr/aframe-workshop#readme",
+  "homepage": "https://github.com/aframevr/aframe-school#readme",
   "devDependencies": {
     "live-server": "^1.2.0"
   }

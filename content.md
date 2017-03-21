@@ -2,7 +2,7 @@
 <!-- .slide: data-background="media/img/aframe.jpg" -->
 
 <div class="talk-title">
-  <h1>A-Frame Workshop</h1>
+  <h1>A-Frame School</h1>
   <h3>An interactive course for WebVR</h3>
   <p class="talk-info">
     <b><a href="https://aframe.io">aframe.io</a></b>
@@ -16,11 +16,11 @@
 
 ## Prologue
 
-The Workshop will help get you started with a development environment. From
-there, the Workshop will give you step-by-step exercises to help you jump into
+The School will help get you started with a development environment. From
+there, the School will give you step-by-step exercises to help you jump into
 WebVR!
 
-Note that the Workshop has sections going &larr; and &rarr;, but also
+Note that the School has sections going &larr; and &rarr;, but also
 subsections going **&uarr; and &darr;**:
 
 <img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24115390/6d4468b2-0d60-11e7-939c-83135c9334b9.png">
@@ -230,7 +230,7 @@ components](https://github.com/donmccurdy/aframe-physics-system) from the
 4. Add an image texture to `<a-cone>`
 5. Add an image texture to the background, `<a-sky>` ([Sample](https://cdn.aframe.io/360-image-gallery-boilerplate/img/sechelt.jpg)). Use 360&deg; images [like from FLickr](https://www.flickr.com/groups/equirectangular/)
 
-<p data-height="300" data-theme-id="19139" data-slug-hash="gmvdwW" data-default-tab="html,result" data-user="mozvr" data-embed-version="2" data-pen-title="Add Textures (Base) â A-Frame Workshop" class="codepen">See the Pen <a href="http://codepen.io/mozvr/pen/gmvdwW/">Add Textures (Base) â A-Frame Workshop</a> by mozillavr (<a href="http://codepen.io/mozvr">@mozvr</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="300" data-theme-id="19139" data-slug-hash="gmvdwW" data-default-tab="html,result" data-user="mozvr" data-embed-version="2" data-pen-title="Add Textures (Base) â A-Frame School" class="codepen">See the Pen <a href="http://codepen.io/mozvr/pen/gmvdwW/">Add Textures (Base) â A-Frame School</a> by mozillavr (<a href="http://codepen.io/mozvr">@mozvr</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 
 ------
 
@@ -241,7 +241,7 @@ components](https://github.com/donmccurdy/aframe-physics-system) from the
 > formats. [Where to Find 3D
 > Models](https://aframe.io/docs/0.5.0/introduction/faq.html#where-can-i-find-assets).
 
-<p data-height="300" data-theme-id="19139" data-slug-hash="MpQPKY" data-default-tab="html,result" data-user="mozvr" data-embed-version="2" data-pen-title="Add 3D Models â A-Frame Workshop" class="codepen">See the Pen <a href="http://codepen.io/mozvr/pen/MpQPKY/">Add 3D Models â A-Frame Workshop</a> by mozillavr (<a href="http://codepen.io/mozvr">@mozvr</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="400" data-theme-id="19139" data-slug-hash="MpQPKY" data-default-tab="html,result" data-user="mozvr" data-embed-version="2" data-pen-title="Add 3D Models â A-Frame School" class="codepen">See the Pen <a href="http://codepen.io/mozvr/pen/MpQPKY/">Add 3D Models â A-Frame School</a> by mozillavr (<a href="http://codepen.io/mozvr">@mozvr</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 
 ------
 
@@ -296,7 +296,7 @@ elements](https://aframe.io/docs/0.5.0/primitives/) represented as
 > and use them from HTML.
 > [Documentation](https://github.com/aframevr/aframe-registry#usage)
 
-<p data-height="400" data-theme-id="19139" data-slug-hash="yMpyJr" data-default-tab="html,result" data-user="mozvr" data-embed-version="2" data-pen-title="Using the Registry â A-Frame Workshop" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/mozvr/pen/yMpyJr/">Using the Registry â A-Frame Workshop</a> by mozillavr (<a href="http://codepen.io/mozvr">@mozvr</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="400" data-theme-id="19139" data-slug-hash="yMpyJr" data-default-tab="html,result" data-user="mozvr" data-embed-version="2" data-pen-title="Using the Registry â A-Frame School" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/mozvr/pen/yMpyJr/">Using the Registry â A-Frame School</a> by mozillavr (<a href="http://codepen.io/mozvr">@mozvr</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 
 ------
 
@@ -402,7 +402,7 @@ as a playground.
 4. Move the camera to look at an entity and "click" (stare for a second on
    mobile), and see the entity react
 
-<p data-height="300" data-theme-id="19139" data-slug-hash="QpOXNM" data-default-tab="html,result" data-user="mozvr" data-embed-version="2" data-pen-title="Decomposing Primitives â A-Frame Workshop" class="codepen">See the Pen <a href="http://codepen.io/mozvr/pen/QpOXNM/">Decomposing Primitives â A-Frame Workshop</a> by mozillavr (<a href="http://codepen.io/mozvr">@mozvr</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="300" data-theme-id="19139" data-slug-hash="QpOXNM" data-default-tab="html,result" data-user="mozvr" data-embed-version="2" data-pen-title="Decomposing Primitives â A-Frame School" class="codepen">See the Pen <a href="http://codepen.io/mozvr/pen/QpOXNM/">Decomposing Primitives â A-Frame School</a> by mozillavr (<a href="http://codepen.io/mozvr">@mozvr</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 
 ------
 
