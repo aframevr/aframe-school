@@ -1,5 +1,7 @@
 # aframe-school
 
+> Currently porting from CodePen to [Glitch](https://glitch.com).
+
 Interactive workshop and lessons for learning [A-Frame](https://aframe.io) and
 WebVR.
 
