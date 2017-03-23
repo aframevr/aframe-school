@@ -96,11 +96,15 @@ After you've poked around the editor, see the project live.
 ## Glitch &mdash; Exporting Your Project
 
 At any time, if you want to download your project or export to GitHub, see the
-*Advanced Options* menu. If you download a project, you might be interested in
-setting up a web development environment in the next section **&darr**;. Else, head
-**&rarr;** to start with A-Frame!
+*Advanced Options* menu. Downloading will give you a `.tgz` file which you can
+unzip. For A-Frame projects, you mostly care about what's in the `public/`
+folder, and ignore all the server-side code.
 
 <img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24260267/9bbecd70-0fb0-11e7-821d-e2bdde402de5.png">
+
+If you download a project, you
+might be interested in setting up a web development environment in the next
+section **&darr;**. Else, head **&rarr;** to start with A-Frame!
 
 ---
 
@@ -179,11 +183,11 @@ Homepage](https://aframe.io), [A-Frame Blog](https://aframe.io/blog/), or
 [webvr.rocks](https://webvr.rocks) for information on setting up WebVR with a
 headset if you have one.
 
-<img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24229117/44e29aca-0f35-11e7-8a4f-c49a11e90572.gif">
+<img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24271726/71be4c7c-0fd7-11e7-97b8-0dca0b9e752e.gif">
 
 ------
 
-## Play with *Hello, WebVR*
+## Start with *Hello, WebVR*
 
 A-Frame provides simple HTML elements for starters called
 [primitives](https://aframe.io/docs/0.5.0/primitives/). Later, we'll see what's
@@ -195,7 +199,7 @@ get a feel for the workflow.
 
 ---
 
-## Play with *Hello, WebVR* &mdash; Position
+## Start with *Hello, WebVR* &mdash; Position
 
 Position defines where objects are in 3D space (X, Y, Z) in meters. Change the
 `position` of the objects via the `position` HTML attribute values. [Read about
@@ -214,7 +218,7 @@ positions](https://aframe.io/docs/master/components/position.html).
 
 ---
 
-## Play with *Hello, WebVR* &mdash; Rotation
+## Start with *Hello, WebVR* &mdash; Rotation
 
 Rotation defines orientation of objects in 3D space (about the X, Y, Z axes) in
 degrees. Use the right-hand rule to spatially visualize rotation. [Read about
@@ -227,87 +231,110 @@ rotations](https://aframe.io/docs/master/components/rotation.html).
 3. **Extra Credit:** Wrap the scene contents in `<a-entity>` (like a `<div>`)
 and give it a rotation to see relative rotations
 
-<img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24025669/0d4bf9dc-0a79-11e7-99df-32628537493a.png">
+<img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24265119/a99f6ad0-0fbf-11e7-87a1-3a2a596544a8.png">
+
+[View Result](https://aframe-school-rotation.glitch.me/solution.html)  <!-- .element: class="cta-button" -->
 
 ---
 
-## Play with *Hello, WebVR* &mdash; Add New Primitives
+## Start with *Hello, WebVR* &mdash; Add Primitives
 
-> Add new primitives the scene by adding more HTML elements to `<a-scene>`.
-> [Documentation](https://aframe.io/docs/0.5.0/primitives/)
+Add primitives the scene by adding HTML elements under `<a-scene>`.  [Read
+about primitives](https://aframe.io/docs/0.5.0/primitives/).
 
-1. Add [`<a-torus-knot>`](https://aframe.io/docs/0.5.0/primitives/a-torus-knot.html)
-2. Add [`<a-dodecahedron>`](https://aframe.io/docs/0.5.0/primitives/a-dodecahedron.html)
-3. Add [`<a-text>`](https://aframe.io/docs/0.5.0/primitives/a-text.html)
+[Remix Lesson on Glitch](https://glitch.com/~aframe-school-primitives)  <!-- .element: class="cta-button" -->
 
-[Open CodePen](http://codepen.io/mozvr/pen/BjygdO)  <!-- .element: class="cta-button" -->
+1. Add [`<a-torus-knot>`](https://aframe.io/docs/0.5.0/primitives/a-torus-knot.html) to the left
+2. Add [`<a-dodecahedron>`](https://aframe.io/docs/0.5.0/primitives/a-dodecahedron.html) to the right
+3. Add [`<a-text>`](https://aframe.io/docs/0.5.0/primitives/a-text.html) aligned in the center
 
-<img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24034590/130644b4-0aaf-11e7-9e18-72469d8fc2cc.png">
+<img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24266010/9c57cbe4-0fc2-11e7-968f-168f3649d109.png">
+
+[View Result](https://aframe-school-primitives.glitch.me/solution.html)  <!-- .element: class="cta-button" -->
 
 ------
 
-## Use the A-Frame Inspector
+## Open the A-Frame Inspector
 
-> Open the A-Frame Inspector. Hit `<ctrl> + <alt> + i` on *any* A-Frame scene
-> to pop open a visual editor.  Try the Inspector on some of the [homepage
-> examples](https://aframe.io/examples/).
-> [Documentation](https://aframe.io/docs/master/guides/using-the-aframe-inspector.html)
+Hit **`<ctrl> + <alt> + i`** on **any** A-Frame scene to pop open a visual
+editor, just like your browser's Dev Tools!  Try the Inspector on some of the
+[homepage examples](https://aframe.io/examples/). [Read about the
+Inspector](https://aframe.io/docs/master/guides/using-the-aframe-inspector.html).
 
 <img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24028372/9998ad60-0a8b-11e7-93d4-ff134bee05ca.gif">
 
 ---
 
-## Use the A-Frame Inspector &mdash; Change Component Values
+## Open the A-Frame Inspector &mdash; Change Component Values
 
-> Modify an entity by modifying its components. The Inspector knows about all
-> A-Frame components, including non-core components.
-> [Documentation](https://aframe.io/docs/master/guides/using-the-aframe-inspector.html)
+Modify an entity by modifying its components on the right-hand panel. The
+Inspector knows about all A-Frame components, including community components.
+This example includes an external [text-geometry
+component](https://www.npmjs.com/package/aframe-text-geometry-component), which
+the Inspector can modify the values of live.
+
+[Open Example on Glitch](https://aframe-vaporwave.glitch.me)  <!-- .element: class="cta-button" -->
 
 1. Select one of the entities with text in the example
-2. Change the community [`text-geometry` component's](https://github.com/ngokevin/kframe/tree/master/components/text-geometry) `value` property
+2. Change the [`text-geometry` component's](https://www.npmjs.com/package/aframe-text-geometry-component) `value` property
 
-[Open Example](http://ngokevin.com/kframe/components/text-geometry/examples/vaporwave/)  <!-- .element: class="cta-button" -->
-
-<img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24028481/a55e0b62-0a8c-11e7-80dc-e4b391198446.png">
+<img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24272186/615c561a-0fd9-11e7-91ef-f7a720e13fdd.png">
 
 ---
 
-## Use the A-Frame Inspector &mdash; Attach Components from the Registry
+## Open the A-Frame Inspector &mdash; Attach Components from the Registry
 
-> Use [physics
-components](https://github.com/donmccurdy/aframe-physics-system) from the
-[Registry](https://aframe.io/registry/) to add gravity and collisions.
-> The Registry is a curated collection of A-Frame components. And the Inspector
-> is hooked up to the Registry so we can add components from the Registry in
-> the entity panel.
-> [Documentation](https://aframe.io/docs/master/guides/using-the-aframe-inspector.html)
+Use [physics components](https://github.com/donmccurdy/aframe-physics-system)
+from the [Registry](https://aframe.io/registry/) to add gravity and collisions.
+The Registry is a curated collection of A-Frame components. And the Inspector
+is hooked up to the Registry so we can add components from the Registry in the
+entity panel.
+
+[Open Example on Glitch](https://aframe-vaporwave.glitch.me)  <!-- .element: class="cta-button" -->
 
 1. Add the `static-body` component to ground grid
 2. Add the `dynamic-body` component to the torus knot (the purple pretzel in the back)
 3. Increase the Y-position of the torus knot to make it higher up
-
-[Open Example](http://ngokevin.com/kframe/components/text-geometry/examples/vaporwave/)  <!-- .element: class="cta-button" -->
+4. Exit the Inspector
 
 <img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24028803/2e873d6c-0a8f-11e7-8e20-b47380b455b0.gif">
 
 ------
 
-## Add Textures
+## Add Textures &mdash; Uploading Assets
 
-> Add image textures to meshes to give them more appearance. Fill in the `src`
-> HTML attributes with image URLs (ideally hosted with HTTPS and supports CORS,
-> like [Imgur](https://imgur.com)). Find your own images online like from
-> [textures.com](https://textures.com).
-> [Guide](https://aframe.io/docs/0.5.0/guides/#applying-an-image-texture).
-> [Documentation](https://aframe.io/docs/0.5.0/components/material.html#textures).
+We'll be adding image textures to meshes to more appearance than a flat color.
+[Find your own images
+online](https://aframe.io/docs/0.5.0/introduction/faq.html#where-can-i-find-assets),
+and upload them through the assets section in Glitch or through the uploader on
+[cdn.aframe.io](https://cdn.aframe.io). Wherever else you may upload, make sure
+it's being served with
+[CORS](https://developer.mozilla.org/docs/Web/HTTP/Access_control_CORS) and
+over HTTPS.
 
-1. Add an image texture to the ground, `<a-plane>` ([Sample](https://cdn.aframe.io/a-painter/images/floor.jpg))
-2. Add image textures to `<a-box>`es ([Sample](https://i.imgur.com/mYmmbrp.jpg))
+<img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24273593/5e0729e8-0fe0-11e7-94ea-19443c817d44.png">
+
+In the Glitch below **&darr;**, some assets will already be provided in the
+assets section (pictured above).
+
+---
+
+## Add Textures &mdash; Image Textures
+
+Fill in the `src` HTML attributes with image URLs. [Read about applying an
+image texture](https://aframe.io/docs/0.5.0/guides/#applying-an-image-texture).
+
+[Remix Lesson on Glitch](https://glitch.com/~aframe-school-textures/)  <!-- .element: class="cta-button" -->
+
+1. Add an image texture to the ground, `<a-plane>`
+2. Add image textures to `<a-box>`es
 3. Add an image texture to `<a-sphere>`
 4. Add an image texture to `<a-cone>`
-5. Add an image texture to the background, `<a-sky>` ([Sample](https://cdn.aframe.io/360-image-gallery-boilerplate/img/sechelt.jpg)). Use 360&deg; images [like from FLickr](https://www.flickr.com/groups/equirectangular/)
+5. Add an image texture to the background, `<a-sky>`. Find [360&deg; images from FLickr](https://www.flickr.com/groups/equirectangular/)
 
-<p data-height="300" data-theme-id="19139" data-slug-hash="gmvdwW" data-default-tab="html,result" data-user="mozvr" data-embed-version="2" data-pen-title="Add Textures (Base) â A-Frame School" class="codepen">See the Pen <a href="http://codepen.io/mozvr/pen/gmvdwW/">Add Textures (Base) â A-Frame School</a> by mozillavr (<a href="http://codepen.io/mozvr">@mozvr</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24273226/75ca5764-0fde-11e7-91f5-61fc240ad261.png">
+
+[View Result](https://aframe-school-textures.glitch.me/solution.html)  <!-- .element: class="cta-button" -->
 
 ------
 
