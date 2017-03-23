@@ -65,7 +65,8 @@ anything up
 
 Glitch lets you remix or fork an existing project and use it as a base for your
 new project. Before starting, we recommend linking Glitch to a [GitHub
-account](https://github.com/).
+account](https://github.com/). After you remix, Glitch will give you a random
+project and URL name, which you can change.
 
 <img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24228287/757c096e-0f30-11e7-9e5e-bcc85b6eaf7d.png">
 
@@ -89,6 +90,17 @@ others to edit with you!
 After you've poked around the editor, see the project live.
 
 <img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24228618/b0643e50-0f32-11e7-904f-bba23051a2d7.png">
+
+---
+
+## Glitch &mdash; Exporting Your Project
+
+At any time, if you want to download your project or export to GitHub, see the
+*Advanced Options* menu. If you download a project, you might be interested in
+setting up a web development environment in the next section **&darr**;. Else, head
+**&rarr;** to start with A-Frame!
+
+<img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24260267/9bbecd70-0fb0-11e7-821d-e2bdde402de5.png">
 
 ---
 
@@ -161,8 +173,9 @@ dance.
 
 ## Try Out A-Frame Examples
 
-Play with examples on your desktop or smartphone on the [A-Frame
-Homepage](https://aframe.io) and [A-Frame Blog](https://aframe.io/blog/). See
+Play with examples on your desktop or smartphone from the [A-Frame
+Homepage](https://aframe.io), [A-Frame Blog](https://aframe.io/blog/), or
+[awesome-aframe](https://github.com/aframevr/awesome-aframe). See
 [webvr.rocks](https://webvr.rocks) for information on setting up WebVR with a
 headset if you have one.
 
