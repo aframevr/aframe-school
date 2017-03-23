@@ -11,9 +11,6 @@
 
 ------
 
-<!-- Prologue Slide. -->
-<!-- .slide: data-background="http://i.imgur.com/ntpYsma.jpg" -->
-
 ## Prologue
 
 Using [Glitch](https://glitch.com), the School will give you step-by-step
