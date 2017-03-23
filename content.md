@@ -13,6 +13,8 @@
 
 ## Prologue
 
+<!-- .slide: data-background="media/img/aframe.jpg" -->
+
 Using [Glitch](https://glitch.com), the School will give you step-by-step
 exercises to help you jump into [WebVR](https://webvr.rocks)! The School has
 sections going &larr; and &rarr; but also subsections going **&uarr; and
@@ -20,12 +22,18 @@ sections going &larr; and &rarr; but also subsections going **&uarr; and
 
 <img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24228703/1b47a23e-0f33-11e7-8feb-96483fa14d38.png">
 
+**Navigate &darr;**
+
+---
+
 ### Resources During Your Journey
 
 1. [Skim through the docs and FAQ](https://aframe.io/docs/)
 2. [Get help from peeps on Slack](https://aframe.io/community/#slack)
 3. [Ask questions on Stack Overflow](http://stackoverflow.com/questions/ask/?tags=aframe)
 4. If you are in a live workshop event, please raise your hand if you have a question!
+
+**Navigate &rarr;**
 
 
 <!-- Lessons start below. -->
