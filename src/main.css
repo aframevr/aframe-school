@@ -476,7 +476,8 @@ div.slide__boilerplate + video {
   zoom: 1 !important;
 }
 
-.reveal .example-btn {
+.reveal .example-btn,
+.reveal .cta-button {
   background: #24CAFF;
   border-radius: 5px;
   color: #FAFAFA !important;

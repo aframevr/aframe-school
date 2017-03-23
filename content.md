@@ -16,16 +16,14 @@
 
 ## Prologue
 
-The School will help get you started with a development environment. From
-there, the School will give you step-by-step exercises to help you jump into
-WebVR!
+Using [Glitch](https://glitch.com), the School will give you step-by-step
+exercises to help you jump into [WebVR](https://webvr.rocks)! The School has
+sections going &larr; and &rarr; but also subsections going **&uarr; and
+&darr;**:
 
-Note that the School has sections going &larr; and &rarr;, but also
-subsections going **&uarr; and &darr;**:
+<img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24228703/1b47a23e-0f33-11e7-8feb-96483fa14d38.png">
 
-<img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24115390/6d4468b2-0d60-11e7-939c-83135c9334b9.png">
-
-### Resources
+### Resources During Your Journey
 
 1. [Skim through the docs and FAQ](https://aframe.io/docs/)
 2. [Get help from peeps on Slack](https://aframe.io/community/#slack)
@@ -38,26 +36,89 @@ subsections going **&uarr; and &darr;**:
 
 ------
 
-## Set Up a Web Development Environment
+## Glitch &mdash; Introduction
 
-> Set up text editor, local server, and ngrok tunnel to get started developing on the Web.
+The School uses [Glitch](https://glitch.com) as your learning and development
+environment for A-Frame.
 
-If you're already set up or want to just play with A-Frame using embedded
-CodePens, then navigate &rarr;.
+<img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24228381/0dcdd94a-0f31-11e7-9baf-b60c5d115a5a.png">
 
-[Documentation: Getting Started](https://aframe.io/docs/0.5.0/introduction/getting-started.html)
+- Glitch lets you code in the browser without having to set
+anything up
+- Glitch lets you **remix** projects to use existing A-Frame projects as a
+  starting point
+- Glitch instantly publishes and hosts your site with a URL (e.g.,
+  `https://aframe.glitch.me`)
+- Glitch updates your A-Frame site live on every code change
+- Glitch lets multiple people code on the same project
+
+*If you are interested in setting up a local development environment, skip ahead &darr;*
 
 ---
 
-## Get a Text Editor
+## Glitch &mdash; Remixing an Existing Project
+
+Glitch lets you remix or fork an existing project and use it as a base for your
+new project. Before starting, we recommend linking Glitch to a [GitHub
+account](https://github.com/).
+
+<img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24228287/757c096e-0f30-11e7-9e5e-bcc85b6eaf7d.png">
+
+[Remix the A-Frame Starter Glitch](https://glitch.com/~aframe/)  <!-- .element: class="cta-button" -->
+
+---
+
+## Glitch &mdash; Editing Code
+
+Once you've [remixed the A-Frame Starter Glitch](https://glitch.com/~aframe/),
+check out where you'll be editing your code. Poke around and see that you can
+even edit the backend server code, upload assets, create new files, or invite
+others to edit with you!
+
+<img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24228478/b68a129c-0f31-11e7-8bf4-5b71035d4d99.png">
+
+---
+
+## Glitch &mdash; Viewing Your Project
+
+After you've poked around the editor, see the project live.
+
+<img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24228618/b0643e50-0f32-11e7-904f-bba23051a2d7.png">
+
+---
+
+## [Optional] Set Up a Web Development Environment
+
+You can set up a full web development environment on your local machine, rather
+than use Glitch's online web development environment.
+
+<img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24229081/00f24ca2-0f35-11e7-836a-ce7854d44b3d.png">
+
+1. **Get a text editor:** [Atom](https://atom.io) is a good one to start with
+2. **Set up a local server:** Download and run [Mongoose
+Server](https://www.cesanta.com/products/binary) or run `python -m
+SimpleHTTPServer` in a terminal
+3. **Create a file `index.html`** and copy A-Frame code from the Glitch samples
+4. **Run a local server** in the same directory as the HTML file
+5. **Open the local server's URL** in your browser (e.g., `http://localhost:8000`)
+6. **Make changes** to your HTML file and refresh your browser to see the changes
+7. Optional: check out [ngrok](https://ngrok.io) to let any device on any
+network have access to your local server
+
+---
+
+## [Optional] Set Up a Web Development Environment &mdash; Get a Text Editor
 
 [Atom](https://atom.io) is a good text editor to start if you don't have one.
+Other popular options are [Notepad++](https://notepad-plus-plus.org/),
+[Sublime](https://www.sublimetext.com/), [Brackets](http://brackets.io/), or
+[vim](http://www.vim.org/download.php).
 
 <img class="stretch" data-src="https://camo.githubusercontent.com/35abdea0ab280c6b845a2a55e5a75b96dd92e2ce/68747470733a2f2f692e696d6775722e636f6d2f776441496f77722e706e67">
 
 ---
 
-## Set Up a Local Server
+## [Optional] Set Up a Web Development Environment &mdash; Set Up a Local Server
 
 You'll need a local HTTP server to serve your files to the browser.
 
@@ -78,10 +139,11 @@ You'll need a local HTTP server to serve your files to the browser.
 
 ---
 
-## Set Up ngrok
+## [Optional] Set Up a Web Development Environment &mdash; Use ngrok
 
-> Optionally, you can use [ngrok](https://ngrok.com/) to help develop
-> your A-Frame project on a smartphone.
+Optionally, you can use [ngrok](https://ngrok.com/) to help develop your
+A-Frame project on a smartphone without having to do the local IP address
+dance.
 
 1. Download and unzip [ngrok](https://ngrok.com/download/) anywhere
 2. Run ngrok, providing it the port number of your local server (`./ngrok http 8080`)
@@ -90,26 +152,16 @@ You'll need a local HTTP server to serve your files to the browser.
 
 <img class="stretch" data-src="https://cloud.githubusercontent.com/assets/8731271/24021852/30c39640-0a60-11e7-9e20-78249eb15339.png">
 
----
-
-## Putting It All Together
-
-1. Start with [an HTML file](https://github.com/aframevr/aframe-boilerplate/blob/master/index.html) called `index.html`
-2. Start a local server in the same directory as that file
-3. Open the server's localhost URL in a browser (e.g., `http://localhost:8000`)
-4. Develop the HTML file with your text editor and refresh your browser to see changes
-5. Optionally, use ngrok to let your smartphone access your project
-
 ------
 
-## Try A-Frame Examples
+## Try Out A-Frame Examples
 
-> Try some examples (ideally with a headset) on the [A-Frame
-> Homepage](https://aframe.io) and [A-Frame Blog](https://aframe.io/blog/). See
-> [webvr.rocks](https://webvr.rocks) for information on setting up WebVR with
-> your headset.
+Play with examples on your desktop or smartphone on the [A-Frame
+Homepage](https://aframe.io) and [A-Frame Blog](https://aframe.io/blog/). See
+[webvr.rocks](https://webvr.rocks) for information on setting up WebVR with a
+headset if you have one.
 
-<img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24024467/e441beee-0a70-11e7-919a-ad81d63e7a9a.png">
+<img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24229117/44e29aca-0f35-11e7-8a4f-c49a11e90572.gif">
 
 ------
 
