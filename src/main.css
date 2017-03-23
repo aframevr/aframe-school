@@ -236,7 +236,7 @@ html:-moz-full-screen-ancestor {
  * IMAGES
  *********************************************/
 .reveal section img {
-  margin: 15px 0px;
+  // margin: 15px 0px;
 }
 
 .reveal section img.plain {
@@ -481,7 +481,8 @@ div.slide__boilerplate + video {
   background: #24CAFF;
   border-radius: 5px;
   color: #FAFAFA !important;
-  padding: 5px 10px !important;
+  display: inline-block;
+  padding: 10px 10px !important;
 }
 
 .reveal .example-btn:hover {

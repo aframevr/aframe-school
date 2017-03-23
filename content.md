@@ -185,40 +185,47 @@ headset if you have one.
 
 ## Play with *Hello, WebVR*
 
-> Modify basic meshes through the HTML attributes (e.g., change colors,
-> positions, rotations, scale).  Play with the default controls. If you're
-> developing in an HTML file, you can copy-and-paste from the CodePen.
-> [Documentation](https://aframe.io/docs/master/guides/)
+A-Frame provides simple HTML elements for starters called
+[primitives](https://aframe.io/docs/0.5.0/primitives/). Later, we'll see what's
+happening underneath the hood. In the sections below, we'll modify basic meshes
+through HTML attributes (e.g., change colors, positions, rotations, scale) and
+get a feel for the workflow.
 
-<p data-height="400" data-theme-id="19139" data-slug-hash="BjygdO" data-editable="true" data-default-tab="html,result" data-user="mozvr" data-embed-version="2" data-pen-title="Hello World â A-Frame" class="codepen">See the Pen <a href="http://codepen.io/mozvr/pen/BjygdO/">Hello World â A-Frame</a> by mozvr (<a href="http://codepen.io/mozvr">@mozvr</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="500" data-theme-id="19139" data-slug-hash="BjygdO" data-editable="true" data-default-tab="html,result" data-user="mozvr" data-embed-version="2" data-pen-title="Hello, WebVR â A-Frame" class="codepen">See the Pen <a href="http://codepen.io/mozvr/pen/BjygdO/">Hello, WebVR â A-Frame</a> by mozvr (<a href="http://codepen.io/mozvr">@mozvr</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 
 ---
 
 ## Play with *Hello, WebVR* &mdash; Position
 
-> Change the `position` HTML attributes (which are in meters).
-> [Documentation](https://aframe.io/docs/master/components/position.html)
+Position defines where objects are in 3D space (X, Y, Z) in meters. Change the
+`position` of the objects via the `position` HTML attribute values. [Read about
+positions](https://aframe.io/docs/master/components/position.html).
+
+[Remix Lesson on Glitch](https://glitch.com/~aframe-school-position)  <!-- .element: class="cta-button" -->
 
 1. Move the cylinder left by *decreasing* the `position`'s X value
 2. Move the box up by *increasing * the `position`'s Y value
 3. Move the sphere back by *decreasing* the `position`'s Z value
+4. **Extra Credit:** Add `<a-ring>` as a child of `<a-sphere>` and give it a position to see relative positions
 
-[Open CodePen](http://codepen.io/mozvr/pen/BjygdO)  <!-- .element: class="example-btn" -->
+<img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24263745/4d9c6dc2-0fbb-11e7-8cb5-75b861afdddd.png">
 
-<img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24024888/16eafc68-0a74-11e7-9271-08654cc7e139.png">
+[View Result](https://aframe-school-position.glitch.me/solution.html)  <!-- .element: class="cta-button" -->
 
 ---
 
 ## Play with *Hello, WebVR* &mdash; Rotation
 
-> Change the `rotation` HTML attributes (which are in degrees). Use the
-> right-hand rule to spatially visualize rotation.
-> [Documentation](https://aframe.io/docs/master/components/rotation.html)
+Rotation defines orientation of objects in 3D space (about the X, Y, Z axes) in
+degrees. Use the right-hand rule to spatially visualize rotation. [Read about
+rotations](https://aframe.io/docs/master/components/rotation.html).
+
+[Remix Lesson on Glitch](https://glitch.com/~aframe-school-rotation)  <!-- .element: class="cta-button" -->
 
 1. Rotate the cylinder around the X axis so we see the bottom
 2. Rotate the box around the Y axis so the box is facing straight
-
-[Open CodePen](http://codepen.io/mozvr/pen/BjygdO)  <!-- .element: class="example-btn" -->
+3. **Extra Credit:** Wrap the scene contents in `<a-entity>` (like a `<div>`)
+and give it a rotation to see relative rotations
 
 <img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24025669/0d4bf9dc-0a79-11e7-99df-32628537493a.png">
 
@@ -233,7 +240,7 @@ headset if you have one.
 2. Add [`<a-dodecahedron>`](https://aframe.io/docs/0.5.0/primitives/a-dodecahedron.html)
 3. Add [`<a-text>`](https://aframe.io/docs/0.5.0/primitives/a-text.html)
 
-[Open CodePen](http://codepen.io/mozvr/pen/BjygdO)  <!-- .element: class="example-btn" -->
+[Open CodePen](http://codepen.io/mozvr/pen/BjygdO)  <!-- .element: class="cta-button" -->
 
 <img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24034590/130644b4-0aaf-11e7-9e18-72469d8fc2cc.png">
 
@@ -259,7 +266,7 @@ headset if you have one.
 1. Select one of the entities with text in the example
 2. Change the community [`text-geometry` component's](https://github.com/ngokevin/kframe/tree/master/components/text-geometry) `value` property
 
-[Open Example](http://ngokevin.com/kframe/components/text-geometry/examples/vaporwave/)  <!-- .element: class="example-btn" -->
+[Open Example](http://ngokevin.com/kframe/components/text-geometry/examples/vaporwave/)  <!-- .element: class="cta-button" -->
 
 <img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24028481/a55e0b62-0a8c-11e7-80dc-e4b391198446.png">
 
@@ -279,7 +286,7 @@ components](https://github.com/donmccurdy/aframe-physics-system) from the
 2. Add the `dynamic-body` component to the torus knot (the purple pretzel in the back)
 3. Increase the Y-position of the torus knot to make it higher up
 
-[Open Example](http://ngokevin.com/kframe/components/text-geometry/examples/vaporwave/)  <!-- .element: class="example-btn" -->
+[Open Example](http://ngokevin.com/kframe/components/text-geometry/examples/vaporwave/)  <!-- .element: class="cta-button" -->
 
 <img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24028803/2e873d6c-0a8f-11e7-8e20-b47380b455b0.gif">
 
@@ -341,7 +348,7 @@ elements](https://aframe.io/docs/0.5.0/primitives/) represented as
 > [material](https://aframe.io/docs/0.5.0/components/material.html) +
 > [light](https://aframe.io/docs/0.5.0/components/light.html) = light source sphere.
 
-[Open CodePen](http://codepen.io/mozvr/pen/gmoYWJ)  <!-- .element: class="example-btn" -->
+[Open CodePen](http://codepen.io/mozvr/pen/gmoYWJ)  <!-- .element: class="cta-button" -->
 
 <img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24060160/2c53a604-0b0f-11e7-9386-f83a3a9b4cfc.gif">>
 
@@ -396,7 +403,7 @@ as a playground.
 > to get a reference to the scene and its entities.
 > [Documentation](https://aframe.io/docs/0.5.0/guides/using-javascript-and-dom-apis.html#getting-entities-by-querying-and-traversing)
 
-[Open CodePen](http://codepen.io/mozvr/pen/QpOXNM)  <!-- .element: class="example-btn" -->
+[Open CodePen](http://codepen.io/mozvr/pen/QpOXNM)  <!-- .element: class="cta-button" -->
 
 1. Get a reference to the `<a-scene>` element using `var sceneEl = document.querySelector('a-scene');`
 2. Get a reference to all `<a-entity>` elements using `sceneEl.querySelectorAll('a-entity');`
@@ -412,7 +419,7 @@ as a playground.
 > [`Entity.setAttribute()`](https://aframe.io/docs/0.5.0/core/entity.html#setattribute-attr-value-componentattrvalue)
 > to modify entities after retrieving them from the previous exercise. [Documentation](https://aframe.io/docs/0.5.0/guides/using-javascript-and-dom-apis.html#modifying-an-entity)
 
-[Open CodePen](http://codepen.io/mozvr/pen/QpOXNM)  <!-- .element: class="example-btn" -->
+[Open CodePen](http://codepen.io/mozvr/pen/QpOXNM)  <!-- .element: class="cta-button" -->
 
 1. Change the box entity's `rotation` component
 2. Change the cylinder entity's `geometry` component's `height` property
@@ -429,7 +436,7 @@ as a playground.
 > [`document.createElement()`](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement)
 > to modify entities after retrieving them from the previous exercise. [Documentation](https://aframe.io/docs/0.5.0/guides/using-javascript-and-dom-apis.html#creating-an-entity-with-createelement)
 
-[Open CodePen](http://codepen.io/mozvr/pen/QpOXNM)  <!-- .element: class="example-btn" -->
+[Open CodePen](http://codepen.io/mozvr/pen/QpOXNM)  <!-- .element: class="cta-button" -->
 
 1. Create and add an entity with the [`light`](https://aframe.io/docs/0.5.0/components/light.html) component
 2. In a JavaScript `for` loop, create and add 25 box entities with varying positions and scales
@@ -444,7 +451,7 @@ as a playground.
 > Then manually emit that event to see that handler function execute.
 > [Documentation](https://aframe.io/docs/0.5.0/guides/using-javascript-and-dom-apis.html#events-and-event-listeners)
 
-[Open CodePen](http://codepen.io/mozvr/pen/QpOXNM)  <!-- .element: class="example-btn" -->
+[Open CodePen](http://codepen.io/mozvr/pen/QpOXNM)  <!-- .element: class="cta-button" -->
 
 1. Register an event listener on the box to listen to the `foo` event. In the
    handler function, change the box's color
