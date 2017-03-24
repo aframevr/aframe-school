@@ -338,18 +338,7 @@ image texture](https://aframe.io/docs/0.5.0/guides/#applying-an-image-texture).
 
 ------
 
-## Add 3D Models
-
-> Add 3D models created through 3D modeling programs rather than basic 3D
-> primitives. Use glTF (`<a-gltf-model>`) or OBJ (`<a-obj-model>`) 3D file
-> formats. [Where to Find 3D
-> Models](https://aframe.io/docs/0.5.0/introduction/faq.html#where-can-i-find-assets).
-
-<p data-height="400" data-theme-id="19139" data-slug-hash="MpQPKY" data-default-tab="html,result" data-user="mozvr" data-embed-version="2" data-pen-title="Add 3D Models â A-Frame School" class="codepen">See the Pen <a href="http://codepen.io/mozvr/pen/MpQPKY/">Add 3D Models â A-Frame School</a> by mozillavr (<a href="http://codepen.io/mozvr">@mozvr</a>) on <a href="http://codepen.io">CodePen</a>.</p>
-
-------
-
-## Understand Entity-Component
+## Compose and Extend with Entity-Component
 
 > Explore the entity-component pattern of A-Frame rather than using the wrapper
 > primitives (e.g., `<a-box>`). [Documentation](https://aframe.io/docs/0.5.0/core/)
@@ -364,7 +353,7 @@ elements](https://aframe.io/docs/0.5.0/primitives/) represented as
 
 ---
 
-## Understand Entity-Component &mdash; Add a Light Source Sphere
+## Compose and Extend with Entity-Component &mdash; Add a Light Source Sphere
 
 > Use the entity-component pattern to add a sphere that also acts as a point
 > light source. Mix together the geometry, material, and light components to
@@ -391,7 +380,7 @@ elements](https://aframe.io/docs/0.5.0/primitives/) represented as
 
 ---
 
-## Understand Entity-Component &mdash; From the Registry
+## Compose and Extend with Entity-Component &mdash; From the Registry
 
 > Include community components (e.g.,
 > [animation](https://www.npmjs.com/package/aframe-animation-component),
@@ -507,6 +496,28 @@ as a playground.
    mobile), and see the entity react
 
 <p data-height="300" data-theme-id="19139" data-slug-hash="QpOXNM" data-default-tab="html,result" data-user="mozvr" data-embed-version="2" data-pen-title="Decomposing Primitives â A-Frame School" class="codepen">See the Pen <a href="http://codepen.io/mozvr/pen/QpOXNM/">Decomposing Primitives â A-Frame School</a> by mozillavr (<a href="http://codepen.io/mozvr">@mozvr</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+
+------
+
+## Add 3D Models &mdash; glTF Model
+
+3D models are like the images of 3D and VR applications, although a bit
+heavier. A 3D model is created beforehand in a 3D modeling program such as
+[Blender](https://www.blender.org/) and consists of vertices, textures,
+materials. We recommend using [glTF](https://github.com/KhronosGroup/glTF), a
+relatively new 3D file format standard tailored for the Web.
+
+[Remix Lesson on Glitch](https://glitch.com/~aframe-school-gltf-model)  <!-- .element: class="cta-button" -->
+
+<img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24275925/63067074-0ff0-11e7-9440-7c855b9ea0fd.png">
+
+[View Result](https://aframe-school-gltf-model.glitch.me/solution.html)  <!-- .element: class="cta-button" -->
+
+---
+
+## Add 3D Models &mdash; OBJ Model
+
+> Coming soon.
 
 ------
 
