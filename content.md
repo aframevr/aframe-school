@@ -255,6 +255,43 @@ and give it a rotation to see relative rotations
 
 ------
 
+## Add Textures &mdash; Uploading Assets
+
+> We'll be adding image textures to meshes to more appearance than a flat color.
+> [Find your own images
+> online](https://aframe.io/docs/0.5.0/introduction/faq.html#where-can-i-find-assets),
+> and upload them through the assets section in Glitch or through the uploader on
+> [cdn.aframe.io](https://cdn.aframe.io). Wherever else you may upload, make sure
+> it's being served with
+> [CORS](https://developer.mozilla.org/docs/Web/HTTP/Access_control_CORS) and
+> over HTTPS.
+
+<img class="stretch" data-src="media/img/glitchasset.jpg">
+
+In the Glitch below **&darr;**, some assets will already be provided in the
+assets section (pictured above).
+
+---
+
+## Add Textures &mdash; Image Textures
+
+> Fill in the `src` HTML attributes with image URLs. [Read about applying an
+> image texture](https://aframe.io/docs/0.5.0/guides/#applying-an-image-texture).
+
+[Remix Lesson on Glitch](https://glitch.com/~aframe-school-textures/)  <!-- .element: class="cta-button glitch" -->
+
+1. Add an image texture to the ground, `<a-plane>`
+2. Add image textures to `<a-box>`es
+3. Add an image texture to `<a-sphere>`
+4. Add an image texture to `<a-cone>`
+5. Add an image texture to the background, `<a-sky>`. Find [360&deg; images from FLickr](https://www.flickr.com/groups/equirectangular/)
+
+<img class="stretch" data-src="media/img/texture.jpg">
+
+[View Result](https://aframe-school-textures.glitch.me/solution.html)  <!-- .element: class="cta-button" -->
+
+------
+
 ## Open the A-Frame Inspector
 
 > Hit **`<ctrl> + <alt> + i`** on **any** A-Frame scene to pop open a visual
@@ -299,43 +336,6 @@ and give it a rotation to see relative rotations
 4. Exit the Inspector
 
 <img class="stretch" data-src="media/img/inspectorregistry.gif">
-
-------
-
-## Add Textures &mdash; Uploading Assets
-
-> We'll be adding image textures to meshes to more appearance than a flat color.
-> [Find your own images
-> online](https://aframe.io/docs/0.5.0/introduction/faq.html#where-can-i-find-assets),
-> and upload them through the assets section in Glitch or through the uploader on
-> [cdn.aframe.io](https://cdn.aframe.io). Wherever else you may upload, make sure
-> it's being served with
-> [CORS](https://developer.mozilla.org/docs/Web/HTTP/Access_control_CORS) and
-> over HTTPS.
-
-<img class="stretch" data-src="media/img/glitchasset.jpg">
-
-In the Glitch below **&darr;**, some assets will already be provided in the
-assets section (pictured above).
-
----
-
-## Add Textures &mdash; Image Textures
-
-> Fill in the `src` HTML attributes with image URLs. [Read about applying an
-> image texture](https://aframe.io/docs/0.5.0/guides/#applying-an-image-texture).
-
-[Remix Lesson on Glitch](https://glitch.com/~aframe-school-textures/)  <!-- .element: class="cta-button glitch" -->
-
-1. Add an image texture to the ground, `<a-plane>`
-2. Add image textures to `<a-box>`es
-3. Add an image texture to `<a-sphere>`
-4. Add an image texture to `<a-cone>`
-5. Add an image texture to the background, `<a-sky>`. Find [360&deg; images from FLickr](https://www.flickr.com/groups/equirectangular/)
-
-<img class="stretch" data-src="media/img/texture.jpg">
-
-[View Result](https://aframe-school-textures.glitch.me/solution.html)  <!-- .element: class="cta-button" -->
 
 ------
 
@@ -506,9 +506,14 @@ as a playground.
 > heavier. A 3D model is created beforehand in a 3D modeling program such as
 > [Blender](https://www.blender.org/) and consists of vertices, textures,
 > materials. We recommend using [glTF](https://github.com/KhronosGroup/glTF), a
-> relatively new 3D file format standard tailored for the Web.
+> relatively new 3D file format standard tailored for the Web. glTF is like the
+> JPG of 3D models.
 
-[Remix Lesson on Glitch](https://glitch.com/~aframe-school-gltf-model)  <!-- .element: class="cta-button" -->
+[Remix Lesson on Glitch](https://glitch.com/~aframe-school-gltf-model)  <!-- .element: class="cta-button glitch" -->
+
+1. Add the `https://cdn.aframe.io/test-models/models/virtualcity/VC.gltf` to
+the `<a-asset-item id="model">`'s `src` attribute to preload the model
+2. Add `#model` to the `<a-gltf-model>`'s `src` attribute to set and add the model
 
 <img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24275925/63067074-0ff0-11e7-9440-7c855b9ea0fd.png">
 
@@ -516,9 +521,21 @@ as a playground.
 
 ---
 
-## Add 3D Models &mdash; OBJ Model
+## Add 3D Models &mdash; glTF Model Animations
 
-> Coming soon.
+> Models can come with animations. The model provided above has many animations
+> of ships zooming across the city. In the previous Glitch, we've provided a simple
+> `play-all-model-animations` component that we can attach to our model to play
+> its animations. Continue working from your current Glitch.
+
+1. Include the `play-all-model-animations.js` file via a `<script>` in the
+`<head>` after the A-Frame script.
+2. Attach the `play-all-model-animations` component to the `<a-gltf-model>` by
+setting it via an HTML attribute `play-all-model-animations`.
+
+<img class="stretch" data-src="media/img/gltf.gif">
+
+[View Result](https://aframe-school-gltf-model.glitch.me/solution2.html)  <!-- .element: class="cta-button" -->
 
 ------
 
