@@ -15,12 +15,12 @@
 
 <!-- .slide: data-background="media/img/aframe.jpg" -->
 
-Using [Glitch](https://glitch.com), the School will give you step-by-step
-exercises to help you jump into [WebVR](https://webvr.rocks)! The School has
-sections going &larr; and &rarr; but also subsections going **&uarr; and
-&darr;**:
+> Using [Glitch](https://glitch.com), the School will give you step-by-step
+> exercises to help you jump into [WebVR](https://webvr.rocks)! The School has
+> sections going &larr; and &rarr; but also subsections going **&uarr; and
+> &darr;**:
 
-<img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24228703/1b47a23e-0f33-11e7-8feb-96483fa14d38.png">
+<img class="stretch" data-src="media/img/navigation.jpg">
 
 **Navigate &darr;**
 
@@ -43,10 +43,10 @@ sections going &larr; and &rarr; but also subsections going **&uarr; and
 
 ## Glitch &mdash; Introduction
 
-The School uses [Glitch](https://glitch.com) as your learning and development
-environment for A-Frame.
+> The School uses [Glitch](https://glitch.com) as your learning and development
+> environment for A-Frame.
 
-<img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24228381/0dcdd94a-0f31-11e7-9baf-b60c5d115a5a.png">
+<img class="stretch" data-src="media/img/glitch.jpg">
 
 - Glitch lets you code in the browser without having to set
 anything up
@@ -63,44 +63,44 @@ anything up
 
 ## Glitch &mdash; Remixing an Existing Project
 
-Glitch lets you remix or fork an existing project and use it as a base for your
-new project. Before starting, we recommend linking Glitch to a [GitHub
-account](https://github.com/). After you remix, Glitch will give you a random
-project and URL name, which you can change.
+> Glitch lets you remix or fork an existing project and use it as a base for your
+> new project. Before starting, we recommend linking Glitch to a [GitHub
+> account](https://github.com/). After you remix, Glitch will give you a random
+> project and URL name, which you can change.
 
-<img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24228287/757c096e-0f30-11e7-9e5e-bcc85b6eaf7d.png">
+<img class="stretch" data-src="media/img/glitch2.jpg">
 
-[Remix the A-Frame Starter Glitch](https://glitch.com/~aframe/)  <!-- .element: class="cta-button" -->
+[Remix the A-Frame Starter Glitch](https://glitch.com/~aframe/)  <!-- .element: class="cta-button glitch" -->
 
 ---
 
 ## Glitch &mdash; Editing Code
 
-Once you've [remixed the A-Frame Starter Glitch](https://glitch.com/~aframe/),
-check out where you'll be editing your code. Poke around and see that you can
-even edit the backend server code, upload assets, create new files, or invite
-others to edit with you!
+> Once you've [remixed the A-Frame Starter Glitch](https://glitch.com/~aframe/),
+> check out where you'll be editing your code. Poke around and see that you can
+> even edit the backend server code, upload assets, create new files, or invite
+> others to edit with you!
 
-<img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24228478/b68a129c-0f31-11e7-8bf4-5b71035d4d99.png">
+<img class="stretch" data-src="media/img/glitch3.jpg">
 
 ---
 
 ## Glitch &mdash; Viewing Your Project
 
-After you've poked around the editor, see the project live.
+> After you've poked around the editor, see the project live.
 
-<img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24228618/b0643e50-0f32-11e7-904f-bba23051a2d7.png">
+<img class="stretch" data-src="media/img/glitch4.jpg">
 
 ---
 
 ## Glitch &mdash; Exporting Your Project
 
-At any time, if you want to download your project or export to GitHub, see the
-*Advanced Options* menu. Downloading will give you a `.tgz` file which you can
-unzip. For A-Frame projects, you mostly care about what's in the `public/`
-folder, and ignore all the server-side code.
+> At any time, if you want to download your project or export to GitHub, see the
+> *Advanced Options* menu. Downloading will give you a `.tgz` file which you can
+> unzip. For A-Frame projects, you mostly care about what's in the `public/`
+> folder, and ignore all the server-side code.
 
-<img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24260267/9bbecd70-0fb0-11e7-821d-e2bdde402de5.png">
+<img class="stretch" data-src="media/img/glitch5.jpg">
 
 If you download a project, you
 might be interested in setting up a web development environment in the next
@@ -110,10 +110,10 @@ section **&darr;**. Else, head **&rarr;** to start with A-Frame!
 
 ## [Optional] Set Up a Web Development Environment
 
-You can set up a full web development environment on your local machine, rather
-than use Glitch's online web development environment.
+> You can set up a full web development environment on your local machine, rather
+> than use Glitch's online web development environment.
 
-<img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24229081/00f24ca2-0f35-11e7-836a-ce7854d44b3d.png">
+<img class="stretch" data-src="media/img/webdevenv1.jpg">
 
 1. **Get a text editor:** [Atom](https://atom.io) is a good one to start with
 2. **Set up a local server:** Download and run [Mongoose
@@ -130,18 +130,18 @@ network have access to your local server
 
 ## [Optional] Set Up a Web Development Environment &mdash; Get a Text Editor
 
-[Atom](https://atom.io) is a good text editor to start if you don't have one.
-Other popular options are [Notepad++](https://notepad-plus-plus.org/),
-[Sublime](https://www.sublimetext.com/), [Brackets](http://brackets.io/), or
-[vim](http://www.vim.org/download.php).
+> [Atom](https://atom.io) is a good text editor to start if you don't have one.
+> Other popular options are [Notepad++](https://notepad-plus-plus.org/),
+> [Sublime](https://www.sublimetext.com/), [Brackets](http://brackets.io/), or
+> [vim](http://www.vim.org/download.php).
 
-<img class="stretch" data-src="https://camo.githubusercontent.com/35abdea0ab280c6b845a2a55e5a75b96dd92e2ce/68747470733a2f2f692e696d6775722e636f6d2f776441496f77722e706e67">
+<img class="stretch" data-src="media/img/webdevenv2.jpg">
 
 ---
 
 ## [Optional] Set Up a Web Development Environment &mdash; Set Up a Local Server
 
-You'll need a local HTTP server to serve your files to the browser.
+> You'll need a local HTTP server to serve your files to the browser.
 
 <div class="captioned-image-row small">
   <div>
@@ -162,57 +162,58 @@ You'll need a local HTTP server to serve your files to the browser.
 
 ## [Optional] Set Up a Web Development Environment &mdash; Use ngrok
 
-Optionally, you can use [ngrok](https://ngrok.com/) to help develop your
-A-Frame project on a smartphone without having to do the local IP address
-dance.
+> Optionally, you can use [ngrok](https://ngrok.com/) to help develop your
+> A-Frame project on a smartphone without having to do the local IP address
+> dance.
 
 1. Download and unzip [ngrok](https://ngrok.com/download/) anywhere
 2. Run ngrok, providing it the port number of your local server (`./ngrok http 8080`)
 3. In the output, ngrok will give you a URL with a bunch of letters and numbers (e.g., `https://abcdef123456.ngrok.io`)
 4. Open that URL on another device on any network (such as a smartphone or another computer)
 
-<img class="stretch" data-src="https://cloud.githubusercontent.com/assets/8731271/24021852/30c39640-0a60-11e7-9e20-78249eb15339.png">
+<img class="stretch" data-src="media/img/webdevenv3.jpg">
 
 ------
 
 ## Try Out A-Frame Examples
 
-Play with examples on your desktop or smartphone from the [A-Frame
-Homepage](https://aframe.io), [A-Frame Blog](https://aframe.io/blog/), or
-[awesome-aframe](https://github.com/aframevr/awesome-aframe). See
-[webvr.rocks](https://webvr.rocks) for information on setting up WebVR with a
-headset if you have one.
+> Play with examples on your desktop or smartphone from the [A-Frame
+> Homepage](https://aframe.io), [A-Frame Blog](https://aframe.io/blog/), or
+> [awesome-aframe](https://github.com/aframevr/awesome-aframe). See
+> [webvr.rocks](https://webvr.rocks) for information on setting up WebVR with a
+> headset if you have one.
 
-<img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24271726/71be4c7c-0fd7-11e7-97b8-0dca0b9e752e.gif">
+<img data-src="media/img/examples.gif">
 
 ------
 
 ## Start with *Hello, WebVR*
 
-A-Frame provides simple HTML elements for starters called
-[primitives](https://aframe.io/docs/0.5.0/primitives/). Later, we'll see what's
-happening underneath the hood. In the sections below, we'll modify basic meshes
-through HTML attributes (e.g., change colors, positions, rotations, scale) and
-get a feel for the workflow.
+> A-Frame provides easy-to-use HTML elements for starters called
+[primitives](https://aframe.io/docs/0.5.0/primitives/). In the sections below,
+we'll modify basic meshes through HTML attributes (e.g., change colors,
+positions, rotations, scale) and get a feel for the workflow.
 
-<p data-height="500" data-theme-id="19139" data-slug-hash="BjygdO" data-editable="true" data-default-tab="html,result" data-user="mozvr" data-embed-version="2" data-pen-title="Hello, WebVR â A-Frame" class="codepen">See the Pen <a href="http://codepen.io/mozvr/pen/BjygdO/">Hello, WebVR â A-Frame</a> by mozvr (<a href="http://codepen.io/mozvr">@mozvr</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<img data-src="media/img/hellowebvr2.jpg">
+
+<img class="stretch" data-src="media/img/hellowebvr.jpg">
 
 ---
 
 ## Start with *Hello, WebVR* &mdash; Position
 
-Position defines where objects are in 3D space (X, Y, Z) in meters. Change the
-`position` of the objects via the `position` HTML attribute values. [Read about
-positions](https://aframe.io/docs/master/components/position.html).
+> Position defines where objects are in 3D space (X, Y, Z) in meters. Change
+> the `position` of the objects via the `position` HTML attribute values. [Read about
+> positions](https://aframe.io/docs/master/components/position.html).
 
-[Remix Lesson on Glitch](https://glitch.com/~aframe-school-position)  <!-- .element: class="cta-button" -->
+[Remix Lesson on Glitch](https://glitch.com/~aframe-school-position)  <!-- .element: class="cta-button glitch" -->
 
 1. Move the cylinder left by *decreasing* the `position`'s X value
 2. Move the box up by *increasing * the `position`'s Y value
 3. Move the sphere back by *decreasing* the `position`'s Z value
 4. **Extra Credit:** Add `<a-ring>` as a child of `<a-sphere>` and give it a position to see relative positions
 
-<img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24263745/4d9c6dc2-0fbb-11e7-8cb5-75b861afdddd.png">
+<img class="stretch" data-src="media/img/positionresult.jpg">
 
 [View Result](https://aframe-school-position.glitch.me/solution.html)  <!-- .element: class="cta-button" -->
 
@@ -220,18 +221,18 @@ positions](https://aframe.io/docs/master/components/position.html).
 
 ## Start with *Hello, WebVR* &mdash; Rotation
 
-Rotation defines orientation of objects in 3D space (about the X, Y, Z axes) in
-degrees. Use the right-hand rule to spatially visualize rotation. [Read about
-rotations](https://aframe.io/docs/master/components/rotation.html).
+> Rotation defines orientation of objects in 3D space (about the X, Y, Z axes)
+> in degrees. Use the right-hand rule to spatially visualize rotation. [Read about
+> rotations](https://aframe.io/docs/master/components/rotation.html).
 
-[Remix Lesson on Glitch](https://glitch.com/~aframe-school-rotation)  <!-- .element: class="cta-button" -->
+[Remix Lesson on Glitch](https://glitch.com/~aframe-school-rotation)  <!-- .element: class="cta-button glitch" -->
 
 1. Rotate the cylinder around the X axis so we see the bottom
 2. Rotate the box around the Y axis so the box is facing straight
 3. **Extra Credit:** Wrap the scene contents in `<a-entity>` (like a `<div>`)
 and give it a rotation to see relative rotations
 
-<img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24265119/a99f6ad0-0fbf-11e7-87a1-3a2a596544a8.png">
+<img class="stretch" data-src="media/img/rotationresult.jpg">
 
 [View Result](https://aframe-school-rotation.glitch.me/solution.html)  <!-- .element: class="cta-button" -->
 
@@ -239,10 +240,10 @@ and give it a rotation to see relative rotations
 
 ## Start with *Hello, WebVR* &mdash; Add Primitives
 
-Add primitives the scene by adding HTML elements under `<a-scene>`.  [Read
-about primitives](https://aframe.io/docs/0.5.0/primitives/).
+> Add primitives the scene by adding HTML elements under `<a-scene>`.  [Read
+> about primitives](https://aframe.io/docs/0.5.0/primitives/).
 
-[Remix Lesson on Glitch](https://glitch.com/~aframe-school-primitives)  <!-- .element: class="cta-button" -->
+[Remix Lesson on Glitch](https://glitch.com/~aframe-school-primitives)  <!-- .element: class="cta-button glitch" -->
 
 1. Add [`<a-torus-knot>`](https://aframe.io/docs/0.5.0/primitives/a-torus-knot.html) to the left
 2. Add [`<a-dodecahedron>`](https://aframe.io/docs/0.5.0/primitives/a-dodecahedron.html) to the right
@@ -256,10 +257,10 @@ about primitives](https://aframe.io/docs/0.5.0/primitives/).
 
 ## Open the A-Frame Inspector
 
-Hit **`<ctrl> + <alt> + i`** on **any** A-Frame scene to pop open a visual
-editor, just like your browser's Dev Tools!  Try the Inspector on some of the
-[homepage examples](https://aframe.io/examples/). [Read about the
-Inspector](https://aframe.io/docs/master/guides/using-the-aframe-inspector.html).
+> Hit **`<ctrl> + <alt> + i`** on **any** A-Frame scene to pop open a visual
+> editor, just like your browser's Dev Tools!  Try the Inspector on some of the
+> [homepage examples](https://aframe.io/examples/). [Read about the
+> Inspector](https://aframe.io/docs/master/guides/using-the-aframe-inspector.html).
 
 <img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24028372/9998ad60-0a8b-11e7-93d4-ff134bee05ca.gif">
 
@@ -267,13 +268,13 @@ Inspector](https://aframe.io/docs/master/guides/using-the-aframe-inspector.html)
 
 ## Open the A-Frame Inspector &mdash; Change Component Values
 
-Modify an entity by modifying its components on the right-hand panel. The
-Inspector knows about all A-Frame components, including community components.
-This example includes an external [text-geometry
-component](https://www.npmjs.com/package/aframe-text-geometry-component), which
-the Inspector can modify the values of live.
+> Modify an entity by modifying its components on the right-hand panel. The
+> Inspector knows about all A-Frame components, including community components.
+>  This example includes an external [text-geometry
+> component](https://www.npmjs.com/package/aframe-text-geometry-component), which
+> the Inspector can modify the values of live.
 
-[Open Example on Glitch](https://aframe-vaporwave.glitch.me)  <!-- .element: class="cta-button" -->
+[Open Example on Glitch](https://aframe-vaporwave.glitch.me)  <!-- .element: class="cta-button glitch" -->
 
 1. Select one of the entities with text in the example
 2. Change the [`text-geometry` component's](https://www.npmjs.com/package/aframe-text-geometry-component) `value` property
@@ -284,13 +285,13 @@ the Inspector can modify the values of live.
 
 ## Open the A-Frame Inspector &mdash; Attach Components from the Registry
 
-Use [physics components](https://github.com/donmccurdy/aframe-physics-system)
-from the [Registry](https://aframe.io/registry/) to add gravity and collisions.
-The Registry is a curated collection of A-Frame components. And the Inspector
-is hooked up to the Registry so we can add components from the Registry in the
-entity panel.
+> Use [physics components](https://github.com/donmccurdy/aframe-physics-system)
+> from the [Registry](https://aframe.io/registry/) to add gravity and collisions.
+> The Registry is a curated collection of A-Frame components. And the Inspector
+> is hooked up to the Registry so we can add components from the Registry in the
+> entity panel.
 
-[Open Example on Glitch](https://aframe-vaporwave.glitch.me)  <!-- .element: class="cta-button" -->
+[Open Example on Glitch](https://aframe-vaporwave.glitch.me)  <!-- .element: class="cta-button glitch" -->
 
 1. Add the `static-body` component to ground grid
 2. Add the `dynamic-body` component to the torus knot (the purple pretzel in the back)
@@ -303,14 +304,14 @@ entity panel.
 
 ## Add Textures &mdash; Uploading Assets
 
-We'll be adding image textures to meshes to more appearance than a flat color.
-[Find your own images
-online](https://aframe.io/docs/0.5.0/introduction/faq.html#where-can-i-find-assets),
-and upload them through the assets section in Glitch or through the uploader on
-[cdn.aframe.io](https://cdn.aframe.io). Wherever else you may upload, make sure
-it's being served with
-[CORS](https://developer.mozilla.org/docs/Web/HTTP/Access_control_CORS) and
-over HTTPS.
+> We'll be adding image textures to meshes to more appearance than a flat color.
+> [Find your own images
+> online](https://aframe.io/docs/0.5.0/introduction/faq.html#where-can-i-find-assets),
+> and upload them through the assets section in Glitch or through the uploader on
+> [cdn.aframe.io](https://cdn.aframe.io). Wherever else you may upload, make sure
+> it's being served with
+> [CORS](https://developer.mozilla.org/docs/Web/HTTP/Access_control_CORS) and
+> over HTTPS.
 
 <img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24273593/5e0729e8-0fe0-11e7-94ea-19443c817d44.png">
 
@@ -321,10 +322,10 @@ assets section (pictured above).
 
 ## Add Textures &mdash; Image Textures
 
-Fill in the `src` HTML attributes with image URLs. [Read about applying an
-image texture](https://aframe.io/docs/0.5.0/guides/#applying-an-image-texture).
+> Fill in the `src` HTML attributes with image URLs. [Read about applying an
+> image texture](https://aframe.io/docs/0.5.0/guides/#applying-an-image-texture).
 
-[Remix Lesson on Glitch](https://glitch.com/~aframe-school-textures/)  <!-- .element: class="cta-button" -->
+[Remix Lesson on Glitch](https://glitch.com/~aframe-school-textures/)  <!-- .element: class="cta-button glitch" -->
 
 1. Add an image texture to the ground, `<a-plane>`
 2. Add image textures to `<a-box>`es
@@ -501,11 +502,11 @@ as a playground.
 
 ## Add 3D Models &mdash; glTF Model
 
-3D models are like the images of 3D and VR applications, although a bit
-heavier. A 3D model is created beforehand in a 3D modeling program such as
-[Blender](https://www.blender.org/) and consists of vertices, textures,
-materials. We recommend using [glTF](https://github.com/KhronosGroup/glTF), a
-relatively new 3D file format standard tailored for the Web.
+> 3D models are like the images of 3D and VR applications, although a bit
+> heavier. A 3D model is created beforehand in a 3D modeling program such as
+> [Blender](https://www.blender.org/) and consists of vertices, textures,
+> materials. We recommend using [glTF](https://github.com/KhronosGroup/glTF), a
+> relatively new 3D file format standard tailored for the Web.
 
 [Remix Lesson on Glitch](https://glitch.com/~aframe-school-gltf-model)  <!-- .element: class="cta-button" -->
 
