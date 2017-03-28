@@ -262,7 +262,7 @@ and give it a rotation to see relative rotations
 > [homepage examples](https://aframe.io/examples/). [Read about the
 > Inspector](https://aframe.io/docs/master/guides/using-the-aframe-inspector.html).
 
-<img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24028372/9998ad60-0a8b-11e7-93d4-ff134bee05ca.gif">
+<img class="stretch" data-src="media/img/inspector.gif">
 
 ---
 
@@ -279,7 +279,7 @@ and give it a rotation to see relative rotations
 1. Select one of the entities with text in the example
 2. Change the [`text-geometry` component's](https://www.npmjs.com/package/aframe-text-geometry-component) `value` property
 
-<img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24272186/615c561a-0fd9-11e7-91ef-f7a720e13fdd.png">
+<img class="stretch" data-src="media/img/inspectorchange.jpg">
 
 ---
 
@@ -298,7 +298,7 @@ and give it a rotation to see relative rotations
 3. Increase the Y-position of the torus knot to make it higher up
 4. Exit the Inspector
 
-<img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24028803/2e873d6c-0a8f-11e7-8e20-b47380b455b0.gif">
+<img class="stretch" data-src="media/img/inspectorregistry.gif">
 
 ------
 
@@ -313,7 +313,7 @@ and give it a rotation to see relative rotations
 > [CORS](https://developer.mozilla.org/docs/Web/HTTP/Access_control_CORS) and
 > over HTTPS.
 
-<img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24273593/5e0729e8-0fe0-11e7-94ea-19443c817d44.png">
+<img class="stretch" data-src="media/img/glitchasset.jpg">
 
 In the Glitch below **&darr;**, some assets will already be provided in the
 assets section (pictured above).
@@ -333,7 +333,7 @@ assets section (pictured above).
 4. Add an image texture to `<a-cone>`
 5. Add an image texture to the background, `<a-sky>`. Find [360&deg; images from FLickr](https://www.flickr.com/groups/equirectangular/)
 
-<img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24273226/75ca5764-0fde-11e7-91f5-61fc240ad261.png">
+<img class="stretch" data-src="media/img/texture.jpg">
 
 [View Result](https://aframe-school-textures.glitch.me/solution.html)  <!-- .element: class="cta-button" -->
 
@@ -548,33 +548,6 @@ as a playground.
 > Add
 > [controller-cursor](https://github.com/bryik/aframe-controller-cursor-component)
 > to the right hand.
-
-------
-
-## Publish a Web Application
-
-> Deploy your HTML and JavaScript to the Web, and have it instantly be
-> available to the Internet. Make sure it's published with HTTPS as a
-> requirement for WebVR. If you publish an A-Frame site, please share it out
-> with your link! [Guide](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/Publishing_your_website)
-
-<div class="captioned-image-row small">
-  <div>
-    <img data-src="https://surge.sh/images/logos/svg/surge-logo.svg">
-    <a href="https://surge.sh">Surge</a>
-    <p>Simple, single-command web publishing. Publish HTML, CSS, and JS for free, without leaving the command line.</p>
-  </div>
-  <div>
-    <img data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Neocitieslogo.svg/1200px-Neocitieslogo.svg.png">
-    <a href="https://neocities.org">Neocities</a>
-    <p>Free web hosting and tools that allow anyone to create a website.</p>
-  </div>
-  <div>
-    <img data-src="https://assets-cdn.github.com/images/modules/logos_page/Octocat.png">
-    <a href="https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/">GitHub Pages</a>
-    <p>Websites for you and your projects, hosted directly from your GitHub repository. Just edit, push, and your changes are live.</p>
-  </div>
-</div>
 
 ------
 
