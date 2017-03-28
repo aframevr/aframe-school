@@ -1,9 +1,7 @@
 # aframe-school
 
-> Currently porting from CodePen to [Glitch](https://glitch.com).
-
 Interactive workshop and lessons for learning [A-Frame](https://aframe.io) and
-WebVR.
+WebVR. Based around [Glitch](https://glitch.com).
 
 Can either be self-led or be used as part of a hands-on event (e.g., tutorial
 or workshop). If you are holding an event, you can present the [A-Frame
@@ -12,7 +10,7 @@ primer beforehand.
 
 [GO TO SCHOOL](https://aframe.io/aframe-school/)
 
-![](https://cloud.githubusercontent.com/assets/674727/24114696/5bccf718-0d5e-11e7-82ba-ae25d37224a6.png)
+![](https://cloud.githubusercontent.com/assets/674727/24431825/1a2c83de-13d3-11e7-9739-dd5004891684.png)
 
 ## Grabbing the School
 

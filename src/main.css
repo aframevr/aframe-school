@@ -508,3 +508,9 @@ div.slide__boilerplate + video {
   display: inline-block;
   padding: 0 4px;
 }
+
+.reveal p a code,
+.reveal li a code {
+  background: none;
+  padding: 0;
+}

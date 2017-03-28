@@ -339,10 +339,10 @@ assets section (pictured above).
 
 ------
 
-## Compose and Extend with Entity-Component
+## Compose with Entity-Component
 
-> Explore the entity-component pattern of A-Frame rather than using the wrapper
-> primitives (e.g., `<a-box>`). [Documentation](https://aframe.io/docs/0.5.0/core/)
+> Explore the entity-component pattern of A-Frame rather than using primitives
+> (e.g., `<a-box>`). [Documentation](https://aframe.io/docs/0.5.0/core/)
 
 *Hello, WebVR* example with all the [A-Frame primitive
 elements](https://aframe.io/docs/0.5.0/primitives/) represented as
@@ -354,34 +354,27 @@ elements](https://aframe.io/docs/0.5.0/primitives/) represented as
 
 ---
 
-## Compose and Extend with Entity-Component &mdash; Add a Light Source Sphere
+## Compose with Entity-Component &mdash; Add a Light Source Sphere
 
 > Use the entity-component pattern to add a sphere that also acts as a point
 > light source. Mix together the geometry, material, and light components to
 > compose this type of object.
->
-> `<a-entity>` +
-> [geometry](https://aframe.io/docs/0.5.0/components/geometry.html) +
-> [material](https://aframe.io/docs/0.5.0/components/material.html) +
-> [light](https://aframe.io/docs/0.5.0/components/light.html) = light source sphere.
 
-[Open CodePen](http://codepen.io/mozvr/pen/gmoYWJ)  <!-- .element: class="cta-button" -->
+1. Look for `<a-entity id="lightSphere">`
+2. Attach the [geometry component](https://aframe.io/docs/0.5.0/components/geometry.html) configured to use `primitive: sphere` to the entity
+3. Attach the [material component](https://aframe.io/docs/0.5.0/components/material.html) configured to use `color: #FFF` and `shader: flat` to the entity
+4. Attach the [light component](https://aframe.io/docs/0.5.0/components/light.html) configured to use `type: point` to the entity
+5. **Extra Credit:** Add the animation component from [the Registry](https://aframe.io/registry/) via a `<script>` tag. Attach the animation configured to use `property: position` and `dir: alternate` and `loop: true` and provide a position value for `to: <POSITION>`
+
+[Remix on Glitch](https://glitch.com/~aframe-school-ecs-light-sphere)  <!-- .element: class="cta-button glitch" -->
 
 <img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24060160/2c53a604-0b0f-11e7-9386-f83a3a9b4cfc.gif">>
 
-<!-- NOTES -->
-
-### Solution
-
-```html
-<a-entity geometry="primitive: sphere; radius: 0.2" material="shader: flat" light="type: point; color: #FFF" position="-4 3 -4">
-  <a-animation attribute="position" to="4 2.8 -4" direction="alternate" repeat="indefinite"></a-animation>
-</a-entity>
-```
+[View Result](https://aframe-school-ecs-light-sphere.glitch.com/solution.html)  <!-- .element class="cta-button" -->
 
 ---
 
-## Compose and Extend with Entity-Component &mdash; From the Registry
+## Compose with Entity-Component &mdash; From the Registry
 
 > Include community components (e.g.,
 > [animation](https://www.npmjs.com/package/aframe-animation-component),
