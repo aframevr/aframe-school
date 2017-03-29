@@ -405,7 +405,7 @@ with `property: scale`, `loop: true`, and `to: 1.1 1.1 1.1`
 
 ------
 
-## Code with JavaScript
+## Use JavaScript
 
 > Use JavaScript and DOM APIs to programmatically modify the scene and its
 > entities. A-Frame is not just HTML; A-Frame provides access to JavaScript,
@@ -424,7 +424,7 @@ through the browser console.
 
 ---
 
-## Code with JavaScript &mdash; Getting Entities
+## Use JavaScript &mdash; Getting Entities
 
 > Use
 > [`document.querySelector()`](https://developer.mozilla.org/docs/Web/API/Document/querySelector)
@@ -445,7 +445,7 @@ through the browser console.
 
 ---
 
-## Code with JavaScript &mdash; Modifying Entities
+## Use JavaScript &mdash; Modifying Entities
 
 > Use
 > [`Entity.setAttribute()`](https://aframe.io/docs/0.5.0/core/entity.html#setattribute-attr-value-componentattrvalue)
@@ -463,7 +463,7 @@ through the browser console.
 
 ---
 
-## Code with JavaScript &mdash; Creating Entities
+## Use JavaScript &mdash; Creating Entities
 
 > Use [`document.createElement()`](https://developer.mozilla.org/docs/Web/API/Document/createElement)
 > to create entities, `.setAttribute()` to configure them, and `.appendChild()`
@@ -479,22 +479,25 @@ random positions and scales (use `Math.random()`)
 
 ---
 
-## Code with JavaScript &mdash; Events
+## Use JavaScript &mdash; Handling Events
 
 > Use
 > [`.addEventListener()`](https://developer.mozilla.org/docs/Web/API/EventTarget/addEventListener)
 > to register a handler function that will be called when an event is emitted.
-> Then manually emit that event to see that handler function execute.  [Read
-> about events and event listeners with
+> Then manually emit that event to see that handler function execute. Later we
+> can use event listeners to change the scene based on user input or other
+> events. [Read about events and event listeners with
 > A-Frame](https://aframe.io/docs/0.5.0/guides/using-javascript-and-dom-apis.html#events-and-event-listeners).
 
 [Remix Lesson on Glitch](https://glitch.com/~aframe-school-js)  <!-- .element: class="cta-button glitch" -->
 
 1. Register an event listener on the box to listen to the `foo` event. In the
    handler function, change the box's color
-2. Emit the `foo` event with [`Entity.emit()`](https://aframe.io/docs/0.5.0/core/entity.html#emit-name-detail-bubbles) and see the box change its color
+2. Emit the `foo` event with
+[`Entity.emit()`](https://aframe.io/docs/0.5.0/core/entity.html#emit-name-detail-bubbles)
+and see the box change its color
 
-[View Result](https://aframe-school-js.glitch.me)  <!-- .element: class="cta-button" -->
+[View Result](https://aframe-school-js.glitch.me/solution4.html)  <!-- .element: class="cta-button" -->
 
 ------
 
@@ -550,10 +553,12 @@ the `<a-asset-item id="model">`'s `src` attribute to preload the model
 > `play-all-model-animations` component that we can attach to our model to play
 > its animations. Continue working from your current Glitch.
 
-1. Include the `play-all-model-animations.js` file via a `<script>` in the
-`<head>` after the A-Frame script.
-2. Attach the `play-all-model-animations` component to the `<a-gltf-model>` by
-setting it via an HTML attribute `play-all-model-animations`.
+1. Include the `animation-mixer` component via a `<script>` in the
+`<head>` after the A-Frame script. This component is currently in the Registry,
+and may one day be included with A-Frame. `https://unpkg.com/aframe-extras.animation-mixer@3.4.0/dist/aframe-extras.animation-mixer.js`
+2. Attach the `animation-mixer` component to the `<a-gltf-model>` by
+setting it via an HTML attribute `animation-mixer`. By default, this will play all
+the animations of the model at once.
 
 <img class="stretch" data-src="media/img/gltf.gif">
 
