@@ -501,27 +501,52 @@ and see the box change its color
 
 ------
 
-## Add Gaze-Based Cursor Interactions
+## Add Gaze-Based Cursor Interactions &mdash; Add Cursor Entity
 
 > Use the gaze-based [`cursor`
 > component](https://aframe.io/docs/0.5.0/components/cursor.html) to provide
-> the ability to interact with entities (primarily for smartphones). This isn't
-> a great interaction mechanism, but runs through basic interaction using
-> events and for people that don't have a real headset with controllers on
-> hand.
-> [Guide](https://aframe.io/docs/0.5.0/guides/building-with-components.html)
+> the ability to interact with entities (primarily for smartphones).  [Read
+> about building a 360&deg; image
+> gallery](https://aframe.io/docs/0.5.0/guides/building-with-components.html).
 
-1. Explicitly define a
-   [`camera`](https://aframe.io/docs/0.5.0/components/camera.html) entity.
+[Remix Lesson on Glitch](https://glitch.com/~aframe-school-cursor)  <!-- .element: class="cta-button glitch" -->
+
+This lesson has all the event listeners hooked up already. We just need to add
+an entity with the `cursor` component which will provide those events based on
+user input.  Note these events are not provided by the browser, but through
+A-Frame.
+
+1. Add [`<a-camera>`](https://aframe.io/docs/0.5.0/components/camera.html) entity.
    Previously A-Frame was providing a default camera
-2. Add a [`cursor`](https://aframe.io/docs/0.5.0/components/cursor.html) entity
-   as a child of the camera entity
-3. Add an event listener to one of the entities to change (e.g., color,
-   position, rotation) on the `click`, `mouseenter`, or `mouseleave` events
-4. Move the camera to look at an entity and "click" (stare for a second on
-   mobile), and see the entity react
+2. Add [`<a-cursor>`](https://aframe.io/docs/0.5.0/components/cursor.html) entity
+   as a child underneath the camera entity
+3. Drag the camera around the click on the panels on desktop. On smartphones,
+   stare at the panels to trigger clicks (i.e., gaze-based)
 
-<p data-height="300" data-theme-id="19139" data-slug-hash="QpOXNM" data-default-tab="html,result" data-user="mozvr" data-embed-version="2" data-pen-title="Decomposing Primitives â A-Frame School" class="codepen">See the Pen <a href="http://codepen.io/mozvr/pen/QpOXNM/">Decomposing Primitives â A-Frame School</a> by mozillavr (<a href="http://codepen.io/mozvr">@mozvr</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<img class="stretch" data-src="media/img/gaze.gif">
+
+[View Result](https://glitch.com/~aframe-school-cursor)  <!-- .element: class="cta-button glitch" -->
+
+---
+
+## Add Gaze-Based Cursor Interactions &mdash; Handle Events
+
+> Use the `click`, `mouseenter`, `mouseleave` events provided by the gaze-based
+> [`cursor` component](https://aframe.io/docs/0.5.0/components/cursor.html) to
+> change the properties of an object.
+
+The Glitch code will have the project structure set up. We can add JavaScript
+code inside the `handle-events` component, marked by the code comments.
+
+[Remix Lesson on Glitch](https://glitch.com/~aframe-school-cursor-handler)  <!-- .element: class="cta-button glitch" -->
+
+1. Attach our `controller-event-handler` to the cubes. We can attach to all of them at once through the mixin
+2. Add an event listener to change the box's color on `mouseenter` event
+3. Add an event listener to restore the box's color on `mouseleave` event
+
+<img class="stretch" data-src="media/img/gazehandler.gif">
+
+[View Result](https://aframe-school-cursor-handler.glitch.me/solution.html)  <!-- .element: class="cta-button glitch" -->
 
 ------
 
@@ -564,34 +589,58 @@ the animations of the model at once.
 
 [View Result](https://aframe-school-gltf-model.glitch.me/solution2.html)  <!-- .element: class="cta-button" -->
 
+---
+
+## Add 3D Models &mdash; Uploading 3D Models
+
+> If you have a model of your own, it can be tricky to upload it to a CDN since
+> it consists of multiple files that reference each other. So far the easiest
+> way we've found is to dump them into a GitHub repo, publish the repo's master
+> branch to GitHub Pages, and use `rawgit.com` to serve them. Alternatively,
+> set up Amazon S3. More to come.
+
 ------
 
-## Add Tracked Hand Controls
+## Add Tracked Controls &mdash; Add Hand Controls
 
-> If you have a VR headset (i.e., Vive or Rift + Touch), add tracked hand
-> controls with the [`hand-controls`
-> component](https://aframe.io/docs/0.5.0/components/hand-controls.html). If
-> you are at a live event or workshop and have access to the VR headset, leave
-> this as homework exercises.
+> Tracked hand controls provide immersion and interactivity with hand
+> controllers. In the following Glitch, we've pre-recorded hand control
+> movements and button presses with [A-Frame Motion
+> Capture](https://github.com/dmarcos/aframe-motion-capture-components).
+> Now we just have to add the hands and handle the interaction events.
 
-1. Add two entities with `hand-controls`, one for the left hand and one for the right hand
-2. Enter VR, see your hands, and press buttons to see the hands animate
+[Remix Lesson on Glitch](https://glitch.com/~aframe-school-hand-controls)  <!-- .element: class="cta-button glitch" -->
+
+1. Find `<a-entity id="left">` and add the [hand-controls component](https://aframe.io/docs/0.5.0/components/hand-controls.html)
+configured to the left hand (`hand-controls="left"`)
+2. Find `<a-entity id="right">` and add the hand-controls component
+configured to the right hand (`hand-controls="right"`)
+3. View the result and see the hands moving with pre-recorded motions
+
+<img class="stretch" data-src="media/img/trackedcontrols.gif">
+
+[View Result](https://aframe-school-hand-controls.glitch.me/solution.html)  <!-- .element: class="cta-button" -->
 
 ---
 
-## Add Tracked Hand Controls &mdash; Add Teleport Controls
+## Add Tracked Controls &mdash; Add Interactivity
 
-> Add
-> [teleport-controls](https://github.com/fernandojsg/aframe-teleport-controls)
-> to the left hand.
+> There are many components to add interactivity to hand controls.
+> [controller-cursor](https://github.com/bryik/aframe-controller-cursor-component),
+> [aabb-collider +
+> grab](https://github.com/aframevr/aframe/tree/master/examples/showcase/tracked-controls/components),
+> [super-hands](https://github.com/wmurphyrd/aframe-super-hands-component). For
+> this lesson, we'll use controller-cursor that acts as a pointing laser for
+> each hand. Continue from your previous Glitch.
 
----
+1. Add `controller-cursor` component to both hands
+2. In the `controller-event-handler` component, change the color of the boxes
+when they are hovered over with the `mouseenter` event, and restore the color
+with the `mouseleave` event
 
-## Add Tracked Hand Controls &mdash; Add Controller Cursor
+<img class="stretch" data-src="media/img/trackedcontrols2.gif">
 
-> Add
-> [controller-cursor](https://github.com/bryik/aframe-controller-cursor-component)
-> to the right hand.
+[View Result](https://aframe-school-hand-controls.glitch.me/solution2.html)  <!-- .element: class="cta-button" -->
 
 ------
 
