@@ -339,18 +339,24 @@ assets section (pictured above).
 
 ------
 
-## Compose with Entity-Component
+## Compose with Entity-Component &mdash; Break Primitives Down
 
-> Explore the entity-component pattern of A-Frame rather than using primitives
-> (e.g., `<a-box>`). [Documentation](https://aframe.io/docs/0.5.0/core/)
+> Behind the easy-to-use primitive elements, A-Frame is based on an
+> entity-component architecture. Decompose the primitive elements in the
+> *Hello, WebVR* example to `<a-entity>`s with their fundamental components.
 
-*Hello, WebVR* example with all the [A-Frame primitive
-elements](https://aframe.io/docs/0.5.0/primitives/) represented as
-`<a-entity>`s and decomposed to their fundamental components, including
-[geometry](https://aframe.io/docs/0.5.0/components/geometry.html) and
-[material](https://aframe.io/docs/0.5.0/components/material.html):
+[Remix Lesson on Glitch](https://glitch.com/~aframe-school-ecs)  <!-- .element: class="cta-button glitch" -->
 
-<p data-height="400" data-theme-id="19139" data-slug-hash="QpOXNM" data-default-tab="html,result" data-user="mozvr" data-embed-version="2" data-pen-title="Decomposing Primitives â A-Frame" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/mozvr/pen/QpOXNM/">Decomposing Primitives â A-Frame</a> by mozillavr (<a href="http://codepen.io/mozvr">@mozvr</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+[geometry]: https://aframe.io/docs/0.5.0/components/geometry.html
+[material]: https://aframe.io/docs/0.5.0/components/material.html
+
+1. Convert `<a-box>` to `<a-entity>` with [geometry component][geometry] and [material component][material]. Configure the geometry component to be `primitive: box`
+2. Convert `<a-sphere>` to `<a-entity>` with geometry component and material component. Configure the geometry component to be `primitive: sphere`
+3. Convert `<a-cylinder>` to `<a-entity>` with geometry component and material component. Configure the geometry component to be `primitive: cylinder`
+4. Convert `<a-plane>` to `<a-entity>` with geometry component and material component. Configure the geometry component to be `primitive: plane`
+5. Convert `<a-sky>` to `<a-entity>` with geometry component and material component. Configure the geometry component to be `primitive: sphere` with a large `radius: 3000`, and configure the material component to be `shader: flat` so we don't do expensive lighting calculations when we just need a flat color
+
+[View Result](https://aframe-school-ecs.glitch.me/solution.html)  <!-- .element: class="cta-button" -->
 
 ---
 
@@ -366,24 +372,36 @@ elements](https://aframe.io/docs/0.5.0/primitives/) represented as
 4. Attach the [light component](https://aframe.io/docs/0.5.0/components/light.html) configured to use `type: point` to the entity
 5. **Extra Credit:** Add the animation component from [the Registry](https://aframe.io/registry/) via a `<script>` tag. Attach the animation configured to use `property: position` and `dir: alternate` and `loop: true` and provide a position value for `to: <POSITION>`
 
-[Remix on Glitch](https://glitch.com/~aframe-school-ecs-light-sphere)  <!-- .element: class="cta-button glitch" -->
+[Remix Lesson on Glitch](https://glitch.com/~aframe-school-ecs-light-sphere)  <!-- .element: class="cta-button glitch" -->
 
 <img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24060160/2c53a604-0b0f-11e7-9386-f83a3a9b4cfc.gif">>
 
-[View Result](https://aframe-school-ecs-light-sphere.glitch.com/solution.html)  <!-- .element class="cta-button" -->
+[View Result](https://aframe-school-ecs-light-sphere.glitch.me/solution.html)  <!-- .element class="cta-button" -->
 
----
+------
 
-## Compose with Entity-Component &mdash; From the Registry
+## Extend with Entity-Component &mdash; From the Registry
 
-> Include community components (e.g.,
-> [animation](https://www.npmjs.com/package/aframe-animation-component),
-> [particle-system](https://www.npmjs.com/package/aframe-particle-system-component),
-> from the [A-Frame Registry](https://aframe.io/registry/) via a `<script>` tag
-> and use them from HTML.
-> [Documentation](https://github.com/aframevr/aframe-registry#usage)
+> [The Registry](https://aframe.io/registry/) is a great place to grab cool
+> components that the community has added to A-Frame. Sort of like third-party
+> plugins. Find community components from the Registry, copy their JS links,
+> include them via a `<script>` tag, and use them straight from HTML.
 
-<p data-height="400" data-theme-id="19139" data-slug-hash="yMpyJr" data-default-tab="html,result" data-user="mozvr" data-embed-version="2" data-pen-title="Using the Registry â A-Frame School" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/mozvr/pen/yMpyJr/">Using the Registry â A-Frame School</a> by mozillavr (<a href="http://codepen.io/mozvr">@mozvr</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+1. Include [Particle
+System](https://www.npmjs.com/package/aframe-particle-system-component). Attach
+`<a-entity>`s with `particle-system` components configured to `preset: default`
+and `preset: snow`. Open the Inspector to play with the values!
+2. Include [Animation](https://www.npmjs.com/package/aframe-animation-component). Attach
+animation to the sphere to throb its scale by configuring `animation` component
+with `property: scale`, `loop: true`, and `to: 1.1 1.1 1.1`
+3. Include [Outline Effect](https://www.npmjs.com/package/aframe-outline-effect). Drop in the
+`<script>` and attach the `outline` component to the scene
+
+[Remix Lesson on Glitch](https://glitch.com/~aframe-school-registry)  <!-- .element: class="cta-button glitch" -->
+
+<img class="stretch" data-src="media/img/registryexample.gif">
+
+[View Result](https://aframe-school-registry.glitch.me/solution.html)  <!-- .element class="cta-button" -->
 
 ------
 
