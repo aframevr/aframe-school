@@ -491,7 +491,7 @@ div.slide__boilerplate + video {
 }
 
 .reveal .cta-button.glitch:before {
-  background-image: url(media/img/glitch.svg);
+  background-image: url(../media/img/glitch.svg);
   background-position: center center;
   background-repeat: no-repeat;
   display: inline-block;
