@@ -648,10 +648,12 @@ with the `mouseleave` event
 <!-- Lessons end here. -->
 
 
-## Stay Tuned
+## Congratulations!
+
+You've graduated from the A-Frame School and now have a virtual uncertified
+degree in WebVR.
 
 <img class="stretch" data-src="https://cdn.hackaday.io/images/4174761433219325627.png">
 
-[More lessons to come!](https://github.com/aframevr/aframe-workshop/wiki/Brainstorm-Lessons)
-
-See [the documentation](https://aframe.io/docs/) for more guides.
+Head to [the documentation](https://aframe.io/docs/) for more guides to become
+a master.
