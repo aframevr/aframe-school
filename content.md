@@ -412,13 +412,11 @@ with `property: scale`, `loop: true`, and `to: 1.1 1.1 1.1`
 > DOM APIs, and three.js underneath for full control.
 > [Documentation](https://aframe.io/docs/0.5.0/guides/using-javascript-and-dom-apis.html)
 
-In the following examples, open the CodePen, and work inside the **JavaScript**
-panel rather than the **HTML** panel. If you are working from a local HTML
-file, use the [browser's Developer Tools
-Console](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools)
-as a playground.
+[Remix Lesson on Glitch](https://glitch.com/~aframe-school-js)  <!-- .element: class="cta-button glitch" -->
 
-<img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24063890/cfe5c158-0b1e-11e7-85f8-c6e57145905b.png">
+<img class="stretch" data-src="media/img/js.jpg">
+
+[View Result](https://aframe-school-js.glitch.me)  <!-- .element: class="cta-button" -->
 
 ---
 
@@ -431,13 +429,15 @@ as a playground.
 > to get a reference to the scene and its entities.
 > [Documentation](https://aframe.io/docs/0.5.0/guides/using-javascript-and-dom-apis.html#getting-entities-by-querying-and-traversing)
 
-[Open CodePen](http://codepen.io/mozvr/pen/QpOXNM)  <!-- .element: class="cta-button" -->
+[Remix Lesson on Glitch](https://glitch.com/~aframe-school-js)  <!-- .element: class="cta-button glitch" -->
 
 1. Get a reference to the `<a-scene>` element using `var sceneEl = document.querySelector('a-scene');`
 2. Get a reference to all `<a-entity>` elements using `sceneEl.querySelectorAll('a-entity');`
 3. Get a reference to the box entity using `sceneEl.querySelector('#box');`
 4. Get a reference to the sphere and cylinder entities in one `.querySelectorAll()` call by using multi-element selector
 5. Get a reference to the sphere and cylinder entities in one `.querySelectorAll()` call by adding and selecting HTML classes
+
+[View Result](https://aframe-school-js.glitch.me)  <!-- .element: class="cta-button" -->
 
 ---
 
@@ -447,7 +447,7 @@ as a playground.
 > [`Entity.setAttribute()`](https://aframe.io/docs/0.5.0/core/entity.html#setattribute-attr-value-componentattrvalue)
 > to modify entities after retrieving them from the previous exercise. [Documentation](https://aframe.io/docs/0.5.0/guides/using-javascript-and-dom-apis.html#modifying-an-entity)
 
-[Open CodePen](http://codepen.io/mozvr/pen/QpOXNM)  <!-- .element: class="cta-button" -->
+[Remix Lesson on Glitch](https://glitch.com/~aframe-school-js)  <!-- .element: class="cta-button glitch" -->
 
 1. Change the box entity's `rotation` component
 2. Change the cylinder entity's `geometry` component's `height` property
@@ -455,6 +455,8 @@ as a playground.
 4. Change the directional light entity's `light` component's `color` property
   **Clue:** Note that if lights are not defined in HTML, A-Frame will inject
   default light entities
+
+[View Result](https://aframe-school-js.glitch.me)  <!-- .element: class="cta-button" -->
 
 ---
 
@@ -464,10 +466,12 @@ as a playground.
 > [`document.createElement()`](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement)
 > to modify entities after retrieving them from the previous exercise. [Documentation](https://aframe.io/docs/0.5.0/guides/using-javascript-and-dom-apis.html#creating-an-entity-with-createelement)
 
-[Open CodePen](http://codepen.io/mozvr/pen/QpOXNM)  <!-- .element: class="cta-button" -->
+[Remix Lesson on Glitch](https://glitch.com/~aframe-school-js)  <!-- .element: class="cta-button glitch" -->
 
 1. Create and add an entity with the [`light`](https://aframe.io/docs/0.5.0/components/light.html) component
 2. In a JavaScript `for` loop, create and add 25 box entities with varying positions and scales
+
+[View Result](https://aframe-school-js.glitch.me)  <!-- .element: class="cta-button" -->
 
 ---
 
@@ -479,11 +483,13 @@ as a playground.
 > Then manually emit that event to see that handler function execute.
 > [Documentation](https://aframe.io/docs/0.5.0/guides/using-javascript-and-dom-apis.html#events-and-event-listeners)
 
-[Open CodePen](http://codepen.io/mozvr/pen/QpOXNM)  <!-- .element: class="cta-button" -->
+[Remix Lesson on Glitch](https://glitch.com/~aframe-school-js)  <!-- .element: class="cta-button glitch" -->
 
 1. Register an event listener on the box to listen to the `foo` event. In the
    handler function, change the box's color
 2. Emit the `foo` event with [`Entity.emit()`](https://aframe.io/docs/0.5.0/core/entity.html#emit-name-detail-bubbles) and see the box change its color
+
+[View Result](https://aframe-school-js.glitch.me)  <!-- .element: class="cta-button" -->
 
 ------
 
