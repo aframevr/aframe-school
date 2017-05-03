@@ -525,7 +525,7 @@ A-Frame.
 
 <img class="stretch" data-src="media/img/gaze.gif">
 
-[View Result](https://glitch.com/~aframe-school-cursor)  <!-- .element: class="cta-button glitch" -->
+[View Result](https://aframe-school-cursor.glitch.me/solution.html)  <!-- .element: class="cta-button glitch" -->
 
 ---
 
