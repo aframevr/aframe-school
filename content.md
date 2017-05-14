@@ -70,7 +70,7 @@ anything up
 
 <img class="stretch" data-src="media/img/glitch2.jpg">
 
-[Remix the A-Frame Starter Glitch](https://glitch.com/~aframe/)  <!-- .element: class="cta-button glitch" -->
+<a href="https://glitch.com/~aframe/" target="_blank">Remix the A-Frame Starter Glitch</a>  <!-- .element: class="cta-button glitch" -->
 
 ---
 
@@ -206,7 +206,7 @@ positions, rotations, scale) and get a feel for the workflow.
 > the `position` of the objects via the `position` HTML attribute values. [Read about
 > positions](https://aframe.io/docs/master/components/position.html).
 
-[Remix Lesson on Glitch](https://glitch.com/~aframe-school-position)  <!-- .element: class="cta-button glitch" -->
+<a href="https://glitch.com/~aframe-school-position" target="_blank">Remix Lesson on Glitch</a>  <!-- .element: class="cta-button glitch" -->
 
 1. Move the cylinder left by *decreasing* the `position`'s X value
 2. Move the box up by *increasing * the `position`'s Y value
@@ -215,7 +215,7 @@ positions, rotations, scale) and get a feel for the workflow.
 
 <img class="stretch" data-src="media/img/positionresult.jpg">
 
-[View Result](https://aframe-school-position.glitch.me/solution.html)  <!-- .element: class="cta-button" -->
+<a href="https://aframe-school-position.glitch.me/solution.html" target="_blank">View Result</a>  <!-- .element: class="cta-button" -->
 
 ---
 
@@ -225,7 +225,7 @@ positions, rotations, scale) and get a feel for the workflow.
 > in degrees. Use the right-hand rule to spatially visualize rotation. [Read about
 > rotations](https://aframe.io/docs/master/components/rotation.html).
 
-[Remix Lesson on Glitch](https://glitch.com/~aframe-school-rotation)  <!-- .element: class="cta-button glitch" -->
+<a href="https://glitch.com/~aframe-school-rotation" target="_blank">Remix Lesson on Glitch</a>  <!-- .element: class="cta-button glitch" -->
 
 1. Rotate the cylinder around the X axis so we see the bottom
 2. Rotate the box around the Y axis so the box is facing straight
@@ -234,7 +234,7 @@ and give it a rotation to see relative rotations
 
 <img class="stretch" data-src="media/img/rotationresult.jpg">
 
-[View Result](https://aframe-school-rotation.glitch.me/solution.html)  <!-- .element: class="cta-button" -->
+<a href="https://aframe-school-rotation.glitch.me/solution.html" target="_blank">View Result</a>  <!-- .element: class="cta-button" -->
 
 ---
 
@@ -243,7 +243,7 @@ and give it a rotation to see relative rotations
 > Add primitives the scene by adding HTML elements under `<a-scene>`.  [Read
 > about primitives](https://aframe.io/docs/0.5.0/primitives/).
 
-[Remix Lesson on Glitch](https://glitch.com/~aframe-school-primitives)  <!-- .element: class="cta-button glitch" -->
+<a href="https://glitch.com/~aframe-school-primitives" target="_blank">Remix Lesson on Glitch</a>  <!-- .element: class="cta-button glitch" -->
 
 1. Add [`<a-torus-knot>`](https://aframe.io/docs/0.5.0/primitives/a-torus-knot.html) to the left
 2. Add [`<a-dodecahedron>`](https://aframe.io/docs/0.5.0/primitives/a-dodecahedron.html) to the right
@@ -251,7 +251,7 @@ and give it a rotation to see relative rotations
 
 <img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24266010/9c57cbe4-0fc2-11e7-968f-168f3649d109.png">
 
-[View Result](https://aframe-school-primitives.glitch.me/solution.html)  <!-- .element: class="cta-button" -->
+<a href="https://aframe-school-primitives.glitch.me/solution.html" target="_blank">View Result</a>  <!-- .element: class="cta-button" -->
 
 ------
 
@@ -278,7 +278,7 @@ assets section (pictured above).
 > Fill in the `src` HTML attributes with image URLs. [Read about applying an
 > image texture](https://aframe.io/docs/0.5.0/guides/#applying-an-image-texture).
 
-[Remix Lesson on Glitch](https://glitch.com/~aframe-school-textures/)  <!-- .element: class="cta-button glitch" -->
+<a href="https://glitch.com/~aframe-school-textures/" target="_blank">Remix Lesson on Glitch</a>  <!-- .element: class="cta-button glitch" -->
 
 1. Add an image texture to the ground, `<a-plane>`
 2. Add image textures to `<a-box>`es
@@ -288,7 +288,7 @@ assets section (pictured above).
 
 <img class="stretch" data-src="media/img/texture.jpg">
 
-[View Result](https://aframe-school-textures.glitch.me/solution.html)  <!-- .element: class="cta-button" -->
+<a href="https://aframe-school-textures.glitch.me/solution.html" target="_blank">View Result</a>  <!-- .element: class="cta-button" -->
 
 ------
 
@@ -311,7 +311,7 @@ assets section (pictured above).
 > component](https://www.npmjs.com/package/aframe-text-geometry-component), which
 > the Inspector can modify the values of live.
 
-[Open Example on Glitch](https://aframe-vaporwave.glitch.me)  <!-- .element: class="cta-button glitch" -->
+<a href="https://aframe-vaporwave.glitch.me" target="_blank">Open Example on Glitch</a>  <!-- .element: class="cta-button glitch" -->
 
 1. Select one of the entities with text in the example
 2. Change the [`text-geometry` component's](https://www.npmjs.com/package/aframe-text-geometry-component) `value` property
@@ -328,7 +328,7 @@ assets section (pictured above).
 > is hooked up to the Registry so we can add components from the Registry in the
 > entity panel.
 
-[Open Example on Glitch](https://aframe-vaporwave.glitch.me)  <!-- .element: class="cta-button glitch" -->
+<a href="https://aframe-vaporwave.glitch.me" target="_blank">Open Example on Glitch</a>  <!-- .element: class="cta-button glitch" -->
 
 1. Add the `static-body` component to ground grid
 2. Add the `dynamic-body` component to the torus knot (the purple pretzel in the back)
@@ -345,7 +345,7 @@ assets section (pictured above).
 > entity-component architecture. Decompose the primitive elements in the
 > *Hello, WebVR* example to `<a-entity>`s with their fundamental components.
 
-[Remix Lesson on Glitch](https://glitch.com/~aframe-school-ecs)  <!-- .element: class="cta-button glitch" -->
+<a href="https://glitch.com/~aframe-school-ecs" target="_blank">Remix Lesson on Glitch</a>  <!-- .element: class="cta-button glitch" -->
 
 [geometry]: https://aframe.io/docs/0.5.0/components/geometry.html
 [material]: https://aframe.io/docs/0.5.0/components/material.html
@@ -356,7 +356,7 @@ assets section (pictured above).
 4. Convert `<a-plane>` to `<a-entity>` with geometry component and material component. Configure the geometry component to be `primitive: plane`
 5. Convert `<a-sky>` to `<a-entity>` with geometry component and material component. Configure the geometry component to be `primitive: sphere` with a large `radius: 3000`, and configure the material component to be `shader: flat` so we don't do expensive lighting calculations when we just need a flat color
 
-[View Result](https://aframe-school-ecs.glitch.me/solution.html)  <!-- .element: class="cta-button" -->
+<a href="https://aframe-school-ecs.glitch.me/solution.html" target="_blank">View Result</a>  <!-- .element: class="cta-button" -->
 
 ---
 
@@ -372,11 +372,11 @@ assets section (pictured above).
 4. Attach the [light component](https://aframe.io/docs/0.5.0/components/light.html) configured to use `type: point` to the entity
 5. **Extra Credit:** Add the animation component from [the Registry](https://aframe.io/registry/) via a `<script>` tag. Attach the animation configured to use `property: position` and `dir: alternate` and `loop: true` and provide a position value for `to: <POSITION>`
 
-[Remix Lesson on Glitch](https://glitch.com/~aframe-school-ecs-light-sphere)  <!-- .element: class="cta-button glitch" -->
+<a href="https://glitch.com/~aframe-school-ecs-light-sphere" target="_blank">Remix Lesson on Glitch</a>  <!-- .element: class="cta-button glitch" -->
 
 <img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24060160/2c53a604-0b0f-11e7-9386-f83a3a9b4cfc.gif">>
 
-[View Result](https://aframe-school-ecs-light-sphere.glitch.me/solution.html)  <!-- .element class="cta-button" -->
+<a href="https://aframe-school-ecs-light-sphere.glitch.me/solution.html" target="_blank">View Result</a>  <!-- .element class="cta-button" -->
 
 ------
 
@@ -397,11 +397,11 @@ with `property: scale`, `loop: true`, and `to: 1.1 1.1 1.1`
 3. Include [Outline Effect](https://www.npmjs.com/package/aframe-outline-effect). Drop in the
 `<script>` and attach the `outline` component to the scene
 
-[Remix Lesson on Glitch](https://glitch.com/~aframe-school-registry)  <!-- .element: class="cta-button glitch" -->
+<a href="https://glitch.com/~aframe-school-registry" target="_blank">Remix Lesson on Glitch</a>  <!-- .element: class="cta-button glitch" -->
 
 <img class="stretch" data-src="media/img/registryexample.gif">
 
-[View Result](https://aframe-school-registry.glitch.me/solution.html)  <!-- .element class="cta-button" -->
+<a href="https://aframe-school-registry.glitch.me/solution.html" target="_blank">View Result</a>  <!-- .element class="cta-button" -->
 
 ------
 
@@ -413,7 +413,7 @@ with `property: scale`, `loop: true`, and `to: 1.1 1.1 1.1`
 > JavaScript and DOM APIs* with
 > A-Frame](https://aframe.io/docs/0.5.0/guides/using-javascript-and-dom-apis.html).
 
-[Remix Lesson on Glitch](https://glitch.com/~aframe-school-js)  <!-- .element: class="cta-button glitch" -->
+<a href="https://glitch.com/~aframe-school-js" target="_blank">Remix Lesson on Glitch</a>  <!-- .element: class="cta-button glitch" -->
 
 <img class="stretch" data-src="media/img/js.jpg">
 
@@ -433,7 +433,7 @@ through the browser console.
 > to get a reference to the scene and its entities.  [Read about querying for
 > entities](https://aframe.io/docs/0.5.0/guides/using-javascript-and-dom-apis.html#getting-entities-by-querying-and-traversing).
 
-[Remix Lesson on Glitch](https://glitch.com/~aframe-school-js)  <!-- .element: class="cta-button glitch" -->
+<a href="https://glitch.com/~aframe-school-js" target="_blank">Remix Lesson on Glitch</a>  <!-- .element: class="cta-button glitch" -->
 
 1. Get a reference to the `<a-scene>` element using `var sceneEl = document.querySelector('a-scene');`
 2. Get a reference to all `<a-entity>` elements using `sceneEl.querySelectorAll('a-entity');`
@@ -441,7 +441,7 @@ through the browser console.
 4. Get a reference to the sphere and cylinder entities in one `.querySelectorAll()` call by using multi-element selector
 . Get a reference to the sphere and cylinder entities in one `.querySelectorAll()` call by adding and selecting HTML classes
 
-[View Result](https://aframe-school-js.glitch.me/solution.html)  <!-- .element: class="cta-button" -->
+<a href="https://aframe-school-js.glitch.me/solution.html" target="_blank">View Result</a>  <!-- .element: class="cta-button" -->
 
 ---
 
@@ -453,13 +453,13 @@ through the browser console.
 > about modifying
 > entities](https://aframe.io/docs/0.5.0/guides/using-javascript-and-dom-apis.html#modifying-an-entity).
 
-[Remix Lesson on Glitch](https://glitch.com/~aframe-school-js)  <!-- .element: class="cta-button glitch" -->
+<a href="https://glitch.com/~aframe-school-js" target="_blank">Remix Lesson on Glitch</a>  <!-- .element: class="cta-button glitch" -->
 
 1. Change the box entity's `rotation` component
 2. Change the cylinder entity's `geometry` component's `height` property
 3. Change the sphere entity's `material` component's `metalness` property
 
-[View Result](https://aframe-school-js.glitch.me/solution2.html)  <!-- .element: class="cta-button" -->
+<a href="https://aframe-school-js.glitch.me/solution2.html" target="_blank">View Result</a>  <!-- .element: class="cta-button" -->
 
 ---
 
@@ -470,12 +470,12 @@ through the browser console.
 > to add them to the scene.  [Read about creating
 > entities](https://aframe.io/docs/0.5.0/guides/using-javascript-and-dom-apis.html#creating-an-entity-with-createelement).
 
-[Remix Lesson on Glitch](https://glitch.com/~aframe-school-js)  <!-- .element: class="cta-button glitch" -->
+<a href="https://glitch.com/~aframe-school-js" target="_blank">Remix Lesson on Glitch</a>  <!-- .element: class="cta-button glitch" -->
 
 1. In a JavaScript `for` loop, create and add 50 `<a-box>` elements with
 random positions and scales (use `Math.random()`)
 
-[View Result](https://aframe-school-js.glitch.me/solution3.html)  <!-- .element: class="cta-button" -->
+<a href="https://aframe-school-js.glitch.me/solution3.html" target="_blank">View Result</a>  <!-- .element: class="cta-button" -->
 
 ---
 
@@ -489,7 +489,7 @@ random positions and scales (use `Math.random()`)
 > events. [Read about events and event listeners with
 > A-Frame](https://aframe.io/docs/0.5.0/guides/using-javascript-and-dom-apis.html#events-and-event-listeners).
 
-[Remix Lesson on Glitch](https://glitch.com/~aframe-school-js)  <!-- .element: class="cta-button glitch" -->
+<a href="https://glitch.com/~aframe-school-js" target="_blank">Remix Lesson on Glitch</a>  <!-- .element: class="cta-button glitch" -->
 
 1. Register an event listener on the box to listen to the `foo` event. In the
    handler function, change the box's color
@@ -497,7 +497,7 @@ random positions and scales (use `Math.random()`)
 [`Entity.emit()`](https://aframe.io/docs/0.5.0/core/entity.html#emit-name-detail-bubbles)
 and see the box change its color
 
-[View Result](https://aframe-school-js.glitch.me/solution4.html)  <!-- .element: class="cta-button" -->
+<a href="https://aframe-school-js.glitch.me/solution4.html" target="_blank">View Result</a>  <!-- .element: class="cta-button" -->
 
 ------
 
@@ -509,7 +509,7 @@ and see the box change its color
 > about building a 360&deg; image
 > gallery](https://aframe.io/docs/0.5.0/guides/building-with-components.html).
 
-[Remix Lesson on Glitch](https://glitch.com/~aframe-school-cursor)  <!-- .element: class="cta-button glitch" -->
+<a href="https://glitch.com/~aframe-school-cursor" target="_blank">Remix Lesson on Glitch</a>  <!-- .element: class="cta-button glitch" -->
 
 This lesson has all the event listeners hooked up already. We just need to add
 an entity with the `cursor` component which will provide those events based on
@@ -525,7 +525,7 @@ A-Frame.
 
 <img class="stretch" data-src="media/img/gaze.gif">
 
-[View Result](https://aframe-school-cursor.glitch.me/solution.html)  <!-- .element: class="cta-button glitch" -->
+<a href="https://aframe-school-cursor.glitch.me/solution.html" target="_blank">View Result</a>  <!-- .element: class="cta-button glitch" -->
 
 ---
 
@@ -538,7 +538,7 @@ A-Frame.
 The Glitch code will have the project structure set up. We can add JavaScript
 code inside the `handle-events` component, marked by the code comments.
 
-[Remix Lesson on Glitch](https://glitch.com/~aframe-school-cursor-handler)  <!-- .element: class="cta-button glitch" -->
+<a href="https://glitch.com/~aframe-school-cursor-handler" target="_blank">Remix Lesson on Glitch</a>  <!-- .element: class="cta-button glitch" -->
 
 1. Attach our `controller-event-handler` to the cubes. We can attach to all of them at once through the mixin
 2. Add an event listener to change the box's color on `mouseenter` event
@@ -546,7 +546,7 @@ code inside the `handle-events` component, marked by the code comments.
 
 <img class="stretch" data-src="media/img/gazehandler.gif">
 
-[View Result](https://aframe-school-cursor-handler.glitch.me/solution.html)  <!-- .element: class="cta-button glitch" -->
+<a href="https://aframe-school-cursor-handler.glitch.me/solution.html" target="_blank">View Result</a>  <!-- .element: class="cta-button glitch" -->
 
 ------
 
@@ -559,15 +559,15 @@ code inside the `handle-events` component, marked by the code comments.
 > relatively new 3D file format standard tailored for the Web. glTF is like the
 > JPG of 3D models.
 
-[Remix Lesson on Glitch](https://glitch.com/~aframe-school-gltf-model)  <!-- .element: class="cta-button glitch" -->
+<a href="https://glitch.com/~aframe-school-gltf-model" target="_blank">Remix Lesson on Glitch</a>  <!-- .element: class="cta-button glitch" -->
 
 1. Add the `https://cdn.aframe.io/test-models/models/virtualcity/VC.gltf` to
-the `<a-asset-item id="model">`'s `src` attribute to preload the model
-2. Add `#model` to the `<a-gltf-model>`'s `src` attribute to set and add the model
+the `<a-asset-item id="cityModel">`'s `src` attribute to preload the model
+2. Add `#cityModel` to the `<a-gltf-model>`'s `src` attribute to set and add the model
 
 <img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24275925/63067074-0ff0-11e7-9440-7c855b9ea0fd.png">
 
-[View Result](https://aframe-school-gltf-model.glitch.me/solution.html)  <!-- .element: class="cta-button" -->
+<a href="https://aframe-school-gltf-model.glitch.me/solution.html" target="_blank">View Result</a>  <!-- .element: class="cta-button" -->
 
 ---
 
@@ -587,7 +587,7 @@ the animations of the model at once.
 
 <img class="stretch" data-src="media/img/gltf.gif">
 
-[View Result](https://aframe-school-gltf-model.glitch.me/solution2.html)  <!-- .element: class="cta-button" -->
+<a href="https://aframe-school-gltf-model.glitch.me/solution2.html" target="_blank">View Result</a>  <!-- .element: class="cta-button" -->
 
 ---
 
@@ -609,7 +609,7 @@ the animations of the model at once.
 > Capture](https://github.com/dmarcos/aframe-motion-capture-components).
 > Now we just have to add the hands and handle the interaction events.
 
-[Remix Lesson on Glitch](https://glitch.com/~aframe-school-hand-controls)  <!-- .element: class="cta-button glitch" -->
+<a href="https://glitch.com/~aframe-school-hand-controls" target="_blank">Remix Lesson on Glitch</a>  <!-- .element: class="cta-button glitch" -->
 
 1. Find `<a-entity id="left">` and add the [hand-controls component](https://aframe.io/docs/0.5.0/components/hand-controls.html)
 configured to the left hand (`hand-controls="left"`)
@@ -619,7 +619,7 @@ configured to the right hand (`hand-controls="right"`)
 
 <img class="stretch" data-src="media/img/trackedcontrols.gif">
 
-[View Result](https://aframe-school-hand-controls.glitch.me/solution.html)  <!-- .element: class="cta-button" -->
+<a href="https://aframe-school-hand-controls.glitch.me/solution.html" target="_blank">View Result</a>  <!-- .element: class="cta-button" -->
 
 ---
 
@@ -640,7 +640,7 @@ with the `mouseleave` event
 
 <img class="stretch" data-src="media/img/trackedcontrols2.gif">
 
-[View Result](https://aframe-school-hand-controls.glitch.me/solution2.html)  <!-- .element: class="cta-button" -->
+<a href="https://aframe-school-hand-controls.glitch.me/solution2.html" target="_blank">View Result</a>  <!-- .element: class="cta-button" -->
 
 ------
 
