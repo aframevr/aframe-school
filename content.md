@@ -562,8 +562,8 @@ code inside the `handle-events` component, marked by the code comments.
 [Remix Lesson on Glitch](https://glitch.com/~aframe-school-gltf-model)  <!-- .element: class="cta-button glitch" -->
 
 1. Add the `https://cdn.aframe.io/test-models/models/virtualcity/VC.gltf` to
-the `<a-asset-item id="model">`'s `src` attribute to preload the model
-2. Add `#model` to the `<a-gltf-model>`'s `src` attribute to set and add the model
+the `<a-asset-item id="cityModel">`'s `src` attribute to preload the model
+2. Add `#cityModel` to the `<a-gltf-model>`'s `src` attribute to set and add the model
 
 <img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24275925/63067074-0ff0-11e7-9440-7c855b9ea0fd.png">
 
