@@ -70,7 +70,7 @@ anything up
 
 <img class="stretch" data-src="media/img/glitch2.jpg">
 
-[Remix the A-Frame Starter Glitch](https://glitch.com/~aframe/)  <!-- .element: class="cta-button glitch" -->
+<a href="https://glitch.com/~aframe/" target="_blank">Remix the A-Frame Starter Glitch</a>  <!-- .element: class="cta-button glitch" -->
 
 ---
 
