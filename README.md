@@ -28,3 +28,5 @@ The School is built using [reveal.js](https://github.com/hakimel/reveal.js/).
 All of the pages of the School are maintained in a single markdown file,
 `content.md`. Use `------` to separate sections and `---` to separate
 subsections.
+
+[Chinese Version](https://bobchao.github.io/aframe-school-zhTW/#/)
