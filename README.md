@@ -9,7 +9,8 @@ Presentation Kit](https://github.com/aframevr/aframe-presentation-kit) as a
 primer beforehand.
 
 [GO TO SCHOOL](https://aframe.io/aframe-school/)
-* [Ir a la Escuela en español](https://mozillaperu.github.io/aframe-school/#/)
+- [Español](https://mozillaperu.github.io/aframe-school/#/)
+- [中文](https://bobchao.github.io/aframe-school-zhTW/#/)
 
 ![](https://cloud.githubusercontent.com/assets/674727/24431825/1a2c83de-13d3-11e7-9739-dd5004891684.png)
 
@@ -30,4 +31,4 @@ All of the pages of the School are maintained in a single markdown file,
 `content.md`. Use `------` to separate sections and `---` to separate
 subsections.
 
-[Chinese Version](https://bobchao.github.io/aframe-school-zhTW/#/)
+
