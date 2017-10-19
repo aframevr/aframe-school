@@ -190,7 +190,7 @@ network have access to your local server
 ## Start with *Hello, WebVR*
 
 > A-Frame provides easy-to-use HTML elements for starters called
-[primitives](https://aframe.io/docs/0.5.0/primitives/). In the sections below,
+[primitives](https://aframe.io/docs/0.7.0/primitives/). In the sections below,
 we'll modify basic meshes through HTML attributes (e.g., change colors,
 positions, rotations, scale) and get a feel for the workflow.
 
@@ -240,14 +240,14 @@ and give it a rotation to see relative rotations
 
 ## Start with *Hello, WebVR* &mdash; Add Primitives
 
-> Add primitives the scene by adding HTML elements under `<a-scene>`.  [Read
-> about primitives](https://aframe.io/docs/0.5.0/primitives/).
+> Add primitives to the scene by adding HTML elements under `<a-scene>`.  [Read
+> about primitives](https://aframe.io/docs/0.7.0/primitives/).
 
 <a href="https://glitch.com/~aframe-school-primitives" target="_blank">Remix Lesson on Glitch</a>  <!-- .element: class="cta-button glitch" -->
 
-1. Add [`<a-torus-knot>`](https://aframe.io/docs/0.5.0/primitives/a-torus-knot.html) to the left
-2. Add [`<a-dodecahedron>`](https://aframe.io/docs/0.5.0/primitives/a-dodecahedron.html) to the right
-3. Add [`<a-text>`](https://aframe.io/docs/0.5.0/primitives/a-text.html) aligned in the center
+1. Add [`<a-torus-knot>`](https://aframe.io/docs/0.7.0/primitives/a-torus-knot.html) to the left
+2. Add [`<a-dodecahedron>`](https://aframe.io/docs/0.7.0/primitives/a-dodecahedron.html) to the right
+3. Add [`<a-text>`](https://aframe.io/docs/0.7.0/primitives/a-text.html) aligned in the center
 
 <img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24266010/9c57cbe4-0fc2-11e7-968f-168f3649d109.png">
 
@@ -259,7 +259,7 @@ and give it a rotation to see relative rotations
 
 > We'll be adding image textures to meshes to more appearance than a flat color.
 > [Find your own images
-> online](https://aframe.io/docs/0.5.0/introduction/faq.html#where-can-i-find-assets),
+> online](https://aframe.io/docs/0.7.0/introduction/faq.html#where-can-i-find-assets),
 > and upload them through the assets section in Glitch or through the uploader on
 > [cdn.aframe.io](https://cdn.aframe.io). Wherever else you may upload, make sure
 > it's being served with
@@ -276,7 +276,7 @@ assets section (pictured above).
 ## Add Textures &mdash; Image Textures
 
 > Fill in the `src` HTML attributes with image URLs. [Read about applying an
-> image texture](https://aframe.io/docs/0.5.0/guides/building-a-basic-scene.html#applying-an-image-texture).
+> image texture](https://aframe.io/docs/0.7.0/guides/building-a-basic-scene.html#applying-an-image-texture).
 
 <a href="https://glitch.com/~aframe-school-textures/" target="_blank">Remix Lesson on Glitch</a>  <!-- .element: class="cta-button glitch" -->
 
@@ -347,14 +347,14 @@ assets section (pictured above).
 
 <a href="https://glitch.com/~aframe-school-ecs" target="_blank">Remix Lesson on Glitch</a>  <!-- .element: class="cta-button glitch" -->
 
-[geometry]: https://aframe.io/docs/0.5.0/components/geometry.html
-[material]: https://aframe.io/docs/0.5.0/components/material.html
+[geometry]: https://aframe.io/docs/0.7.0/components/geometry.html
+[material]: https://aframe.io/docs/0.7.0/components/material.html
 
 1. Convert `<a-box>` to `<a-entity>` with [geometry component][geometry] and [material component][material]. Configure the geometry component to be `primitive: box`
 2. Convert `<a-sphere>` to `<a-entity>` with geometry component and material component. Configure the geometry component to be `primitive: sphere`
 3. Convert `<a-cylinder>` to `<a-entity>` with geometry component and material component. Configure the geometry component to be `primitive: cylinder`
 4. Convert `<a-plane>` to `<a-entity>` with geometry component and material component. Configure the geometry component to be `primitive: plane`
-5. Convert `<a-sky>` to `<a-entity>` with geometry component and material component. Configure the geometry component to be `primitive: sphere` with a large `radius: 3000`, and configure the material component to be `shader: flat` so we don't do expensive lighting calculations when we just need a flat color
+5. Convert `<a-sky>` to `<a-entity>` with geometry component and material component. Configure the geometry component to be `primitive: sphere` with a large `radius: 3000`, and configure the material component to be `side: back` so we see the interior of the sphere only, and `shader: flat` for not doing expensive lighting calculations when we just need a flat color
 
 <a href="https://aframe-school-ecs.glitch.me/solution.html" target="_blank">View Result</a>  <!-- .element: class="cta-button" -->
 
@@ -366,17 +366,33 @@ assets section (pictured above).
 > light source. Mix together the geometry, material, and light components to
 > compose this type of object.
 
-1. Look for `<a-entity id="lightSphere">`
-2. Attach the [geometry component](https://aframe.io/docs/0.5.0/components/geometry.html) configured to use `primitive: sphere` to the entity
-3. Attach the [material component](https://aframe.io/docs/0.5.0/components/material.html) configured to use `color: #FFF` and `shader: flat` to the entity
-4. Attach the [light component](https://aframe.io/docs/0.5.0/components/light.html) configured to use `type: point` to the entity
-5. **Extra Credit:** Add the animation component from [the Registry](https://aframe.io/registry/) via a `<script>` tag. Attach the animation configured to use `property: position` and `dir: alternate` and `loop: true` and provide a position value for `to: <POSITION>`
-
 <a href="https://glitch.com/~aframe-school-ecs-light-sphere" target="_blank">Remix Lesson on Glitch</a>  <!-- .element: class="cta-button glitch" -->
 
-<img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24060160/2c53a604-0b0f-11e7-9386-f83a3a9b4cfc.gif">>
+1. Look for `<a-entity id="lightSphere">`
+2. Attach the [position component](https://aframe.io/docs/0.7.0/components/position.html) configured to `2 4 -8`
+3. Attach the [geometry component](https://aframe.io/docs/0.7.0/components/geometry.html) configured to use `primitive: sphere` to the entity
+4. Attach the [material component](https://aframe.io/docs/0.7.0/components/material.html) configured to use `color: #FFF` and `shader: flat` to the entity
+5. Attach the [light component](https://aframe.io/docs/0.7.0/components/light.html) configured to use `type: point` to the entity
+6. **Extra Credit:** Add the animation component from [the Registry](https://aframe.io/registry/) via a `<script>` tag. Attach the animation configured to use `property: position` and `dir: alternate` and `loop: true` and provide a position value for `to: <POSITION>`
+
+<img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24060160/2c53a604-0b0f-11e7-9386-f83a3a9b4cfc.gif"/>
 
 <a href="https://aframe-school-ecs-light-sphere.glitch.me/solution.html" target="_blank">View Result</a>  <!-- .element class="cta-button" -->
+
+---
+
+## Compose with Entity-Component &mdash; Cast Shadows
+
+> Configure the light to cast shadows and control which object receive or cast
+> shadows with the shadow component.
+
+<a href="https://glitch.com/~aframe-school-ecs-light-sphere-shadows" target="_blank">Remix Lesson on Glitch</a>  <!-- .element: class="cta-button glitch" -->
+
+1. Configure the light component to be `type: point; castShadow: true`.
+2. Add the [component shadow](https://aframe.io/docs/0.7.0/components/shadow.html) configured to `cast: false` to the ground.
+3. Add the component shadow to each cube.
+
+<a href="https://aframe-school-ecs-light-sphere-shadows.glitch.me/solution.html" target="_blank">View Result</a>  <!-- .element class="cta-button" -->
 
 ------
 
@@ -387,17 +403,16 @@ assets section (pictured above).
 > plugins. Find community components from the Registry, copy their JS links,
 > include them via a `<script>` tag, and use them straight from HTML.
 
+<a href="https://glitch.com/~aframe-school-registry" target="_blank">Remix Lesson on Glitch</a>  <!-- .element: class="cta-button glitch" -->
+
 1. Include [Particle
-System](https://www.npmjs.com/package/aframe-particle-system-component). Attach
-`<a-entity>`s with `particle-system` components configured to `preset: default`
-and `preset: snow`. Open the Inspector to play with the values!
-2. Include [Animation](https://www.npmjs.com/package/aframe-animation-component). Attach
+System](https://github.com/IdeaSpaceVR/aframe-particle-system-component#browser-installation). Attach
+a `particle-system` components to the sphere and configure to `preset: default`
+2. Add a new `<a-entity>` to the scene with another `particle-system`. This time configure it to `preset: snow`. Open the Inspector to play with the values!
+3. Include [Animation](https://www.npmjs.com/package/aframe-animation-component). Attach
 animation to the sphere to throb its scale by configuring `animation` component
 with `property: scale`, `loop: true`, and `to: 1.1 1.1 1.1`
-3. Include [Outline Effect](https://www.npmjs.com/package/aframe-outline-effect). Drop in the
-`<script>` and attach the `outline` component to the scene
 
-<a href="https://glitch.com/~aframe-school-registry" target="_blank">Remix Lesson on Glitch</a>  <!-- .element: class="cta-button glitch" -->
 
 <img class="stretch" data-src="media/img/registryexample.gif">
 
@@ -411,7 +426,7 @@ with `property: scale`, `loop: true`, and `to: 1.1 1.1 1.1`
 > entities. A-Frame is not just HTML; A-Frame provides access to JavaScript,
 > DOM APIs, and three.js underneath for full control.  [Read about *Using
 > JavaScript and DOM APIs* with
-> A-Frame](https://aframe.io/docs/0.5.0/guides/using-javascript-and-dom-apis.html).
+> A-Frame](https://aframe.io/docs/0.7.0/introduction/javascript-events-dom-apis.html).
 
 <a href="https://glitch.com/~aframe-school-js" target="_blank">Remix Lesson on Glitch</a>  <!-- .element: class="cta-button glitch" -->
 
@@ -431,7 +446,7 @@ through the browser console.
 > and
 > [`document.querySelectorAll()`](https://developer.mozilla.org/docs/Web/API/Document/querySelectorAll)
 > to get a reference to the scene and its entities.  [Read about querying for
-> entities](https://aframe.io/docs/0.5.0/guides/using-javascript-and-dom-apis.html#getting-entities-by-querying-and-traversing).
+> entities](https://aframe.io/docs/0.7.0/introduction/javascript-events-dom-apis.html#getting-entities-by-querying-and-traversing).
 
 <a href="https://glitch.com/~aframe-school-js" target="_blank">Remix Lesson on Glitch</a>  <!-- .element: class="cta-button glitch" -->
 
@@ -440,6 +455,7 @@ through the browser console.
 3. Get a reference to the box entity using `sceneEl.querySelector('#box');`
 4. Get a reference to the sphere and cylinder entities in one `.querySelectorAll()` call by using multi-element selector
 . Get a reference to the sphere and cylinder entities in one `.querySelectorAll()` call by adding and selecting HTML classes
+5. Use `console.log()` to show the references in the console.
 
 <a href="https://aframe-school-js.glitch.me/solution.html" target="_blank">View Result</a>  <!-- .element: class="cta-button" -->
 
@@ -448,10 +464,10 @@ through the browser console.
 ## Use JavaScript &mdash; Modifying Entities
 
 > Use
-> [`Entity.setAttribute()`](https://aframe.io/docs/0.5.0/core/entity.html#setattribute-attr-value-componentattrvalue)
+> [`Entity.setAttribute()`](https://aframe.io/docs/0.7.0/core/entity.html#setattribute-attr-value-componentattrvalue)
 > to modify entities after retrieving them from the previous exercise. [Read
 > about modifying
-> entities](https://aframe.io/docs/0.5.0/guides/using-javascript-and-dom-apis.html#modifying-an-entity).
+> entities](https://aframe.io/docs/0.7.0/introduction/javascript-events-dom-apis.html#modifying-an-entity).
 
 <a href="https://glitch.com/~aframe-school-js" target="_blank">Remix Lesson on Glitch</a>  <!-- .element: class="cta-button glitch" -->
 
@@ -468,7 +484,7 @@ through the browser console.
 > Use [`document.createElement()`](https://developer.mozilla.org/docs/Web/API/Document/createElement)
 > to create entities, `.setAttribute()` to configure them, and `.appendChild()`
 > to add them to the scene.  [Read about creating
-> entities](https://aframe.io/docs/0.5.0/guides/using-javascript-and-dom-apis.html#creating-an-entity-with-createelement).
+> entities](https://aframe.io/docs/0.7.0/introduction/javascript-events-dom-apis.html#modifying-the-a-frame-scene-graph).
 
 <a href="https://glitch.com/~aframe-school-js" target="_blank">Remix Lesson on Glitch</a>  <!-- .element: class="cta-button glitch" -->
 
@@ -487,14 +503,14 @@ random positions and scales (use `Math.random()`)
 > Then manually emit that event to see that handler function execute. Later we
 > can use event listeners to change the scene based on user input or other
 > events. [Read about events and event listeners with
-> A-Frame](https://aframe.io/docs/0.5.0/guides/using-javascript-and-dom-apis.html#events-and-event-listeners).
+> A-Frame](https://aframe.io/docs/0.7.0/introduction/javascript-events-dom-apis.html#events-and-event-listeners).
 
 <a href="https://glitch.com/~aframe-school-js" target="_blank">Remix Lesson on Glitch</a>  <!-- .element: class="cta-button glitch" -->
 
 1. Register an event listener on the box to listen to the `foo` event. In the
    handler function, change the box's color
 2. Emit the `foo` event with
-[`Entity.emit()`](https://aframe.io/docs/0.5.0/core/entity.html#emit-name-detail-bubbles)
+[`Entity.emit()`](https://aframe.io/docs/0.7.0/core/entity.html#emit-name-detail-bubbles)
 and see the box change its color
 
 <a href="https://aframe-school-js.glitch.me/solution4.html" target="_blank">View Result</a>  <!-- .element: class="cta-button" -->
@@ -504,10 +520,10 @@ and see the box change its color
 ## Add Gaze-Based Cursor Interactions &mdash; Add Cursor Entity
 
 > Use the gaze-based [`cursor`
-> component](https://aframe.io/docs/0.5.0/components/cursor.html) to provide
+> component](https://aframe.io/docs/0.7.0/components/cursor.html) to provide
 > the ability to interact with entities (primarily for smartphones).  [Read
 > about building a 360&deg; image
-> gallery](https://aframe.io/docs/0.5.0/guides/building-with-components.html).
+> gallery](https://aframe.io/docs/0.7.0/guides/building-with-components.html).
 
 <a href="https://glitch.com/~aframe-school-cursor" target="_blank">Remix Lesson on Glitch</a>  <!-- .element: class="cta-button glitch" -->
 
@@ -516,9 +532,9 @@ an entity with the `cursor` component which will provide those events based on
 user input.  Note these events are not provided by the browser, but through
 A-Frame.
 
-1. Add [`<a-camera>`](https://aframe.io/docs/0.5.0/components/camera.html) entity.
+1. Add [`<a-camera>`](https://aframe.io/docs/0.7.0/components/camera.html) entity.
    Previously A-Frame was providing a default camera
-2. Add [`<a-cursor>`](https://aframe.io/docs/0.5.0/components/cursor.html) entity
+2. Add [`<a-cursor>`](https://aframe.io/docs/0.7.0/components/cursor.html) entity
    as a child underneath the camera entity
 3. Drag the camera around the click on the panels on desktop. On smartphones,
    stare at the panels to trigger clicks (i.e., gaze-based)
@@ -532,7 +548,7 @@ A-Frame.
 ## Add Gaze-Based Cursor Interactions &mdash; Handle Events
 
 > Use the `click`, `mouseenter`, `mouseleave` events provided by the gaze-based
-> [`cursor` component](https://aframe.io/docs/0.5.0/components/cursor.html) to
+> [`cursor` component](https://aframe.io/docs/0.7.0/components/cursor.html) to
 > change the properties of an object.
 
 The Glitch code will have the project structure set up. We can add JavaScript
@@ -540,9 +556,8 @@ code inside the `handle-events` component, marked by the code comments.
 
 <a href="https://glitch.com/~aframe-school-cursor-handler" target="_blank">Remix Lesson on Glitch</a>  <!-- .element: class="cta-button glitch" -->
 
-1. Attach our `controller-event-handler` to the cubes. We can attach to all of them at once through the mixin
-2. Add an event listener to change the box's color on `mouseenter` event
-3. Add an event listener to restore the box's color on `mouseleave` event
+1. Add an event listener to change the box's color on `mouseenter` event
+2. Add an event listener to **restore** the box's color on `mouseleave` event
 
 <img class="stretch" data-src="media/img/gazehandler.gif">
 
@@ -550,24 +565,24 @@ code inside the `handle-events` component, marked by the code comments.
 
 ------
 
-## Add 3D Models &mdash; glTF Model
+## Add 3D Models &mdash; glTF 2.0 Model
 
 > 3D models are like the images of 3D and VR applications, although a bit
 > heavier. A 3D model is created beforehand in a 3D modeling program such as
 > [Blender](https://www.blender.org/) and consists of vertices, textures,
-> materials. We recommend using [glTF](https://github.com/KhronosGroup/glTF), a
-> relatively new 3D file format standard tailored for the Web. glTF is like the
-> JPG of 3D models.
+> materials. We recommend using [glTF 2.0](https://github.com/KhronosGroup/glTF/blob/master/specification/2.0/README.md), a
+> new 3D file format standard tailored for the Web. glTF 2.0 is like the
+> PNG of 3D models. Find here a [collection of glTF 2.0 samples](https://github.com/KhronosGroup/glTF-Sample-Models/tree/master/2.0).
 
-<a href="https://glitch.com/~aframe-school-gltf-model" target="_blank">Remix Lesson on Glitch</a>  <!-- .element: class="cta-button glitch" -->
+<a href="https://glitch.com/~aframe-school-gltf2-model" target="_blank">Remix Lesson on Glitch</a>  <!-- .element: class="cta-button glitch" -->
 
-1. Add the `https://cdn.aframe.io/test-models/models/virtualcity/VC.gltf` to
+1. Add the `https://rawgit.com/KhronosGroup/glTF-Sample-Models/master/2.0/VC/glTF/VC.gltf` to
 the `<a-asset-item id="cityModel">`'s `src` attribute to preload the model
 2. Add `#cityModel` to the `<a-gltf-model>`'s `src` attribute to set and add the model
 
 <img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24275925/63067074-0ff0-11e7-9440-7c855b9ea0fd.png">
 
-<a href="https://aframe-school-gltf-model.glitch.me/solution.html" target="_blank">View Result</a>  <!-- .element: class="cta-button" -->
+<a href="https://aframe-school-gltf2-model.glitch.me/solution.html" target="_blank">View Result</a>  <!-- .element: class="cta-button" -->
 
 ---
 
@@ -587,7 +602,7 @@ the animations of the model at once.
 
 <img class="stretch" data-src="media/img/gltf.gif">
 
-<a href="https://aframe-school-gltf-model.glitch.me/solution2.html" target="_blank">View Result</a>  <!-- .element: class="cta-button" -->
+<a href="https://aframe-school-gltf2-model.glitch.me/solution2.html" target="_blank">View Result</a>  <!-- .element: class="cta-button" -->
 
 ---
 
@@ -601,49 +616,26 @@ the animations of the model at once.
 
 ------
 
-## Add Tracked Controls &mdash; Add Hand Controls
+## Augmented Reality with A-Frame and AR.js
 
-> Tracked hand controls provide immersion and interactivity with hand
-> controllers. In the following Glitch, we've pre-recorded hand control
-> movements and button presses with [A-Frame Motion
-> Capture](https://github.com/dmarcos/aframe-motion-capture-components).
-> Now we just have to add the hands and handle the interaction events.
+> You can use [AR.js in addition to A-Frame](https://aframe.io/blog/arjs/) to
+> create augmented reality applications. [AR.js](https://github.com/jeromeetienne/ar.js) works tracking markers. Use the
+hiro marker (below).
 
-<a href="https://glitch.com/~aframe-school-hand-controls" target="_blank">Remix Lesson on Glitch</a>  <!-- .element: class="cta-button glitch" -->
+<a href="https://glitch.com/~aframe-schools-ar" target="_blank">Remix Lesson on Glitch</a>  <!-- .element: class="cta-button glitch" -->
 
-1. Find `<a-entity id="left">` and add the [hand-controls component](https://aframe.io/docs/0.5.0/components/hand-controls.html)
-configured to the left hand (`hand-controls="left"`)
-2. Find `<a-entity id="right">` and add the hand-controls component
-configured to the right hand (`hand-controls="right"`)
-3. View the result and see the hands moving with pre-recorded motions
+1. Add the `arjs` component to the scene.
+2. Add the primitive `<a-marker-camera>` to the scene and set its `preset` attribute to `hiro`
+3. Place a [hiro marker](https://jeromeetienne.github.io/AR.js/data/images/HIRO.jpg) on a flat surface
+4. Open the experience in your phone and grant permissions to use the camera
+5. Move your phone around the marker
+6. **Extra Credit:** if you want to move the marker instead of the camera, remove the `<a-camera-marker>` and use the `<a-marker>` primitive. Read about [using `<a-marker>`](https://aframe.io/blog/arjs/#move-the-camera-or-the-marker)
 
-<img class="stretch" data-src="media/img/trackedcontrols.gif">
+<a href="https://jeromeetienne.github.io/AR.js/data/images/HIRO.jpg" target="_blank"><img style="width: 25%" src="https://jeromeetienne.github.io/AR.js/data/images/HIRO.jpg"></a>
 
-<a href="https://aframe-school-hand-controls.glitch.me/solution.html" target="_blank">View Result</a>  <!-- .element: class="cta-button" -->
-
----
-
-## Add Tracked Controls &mdash; Add Interactivity
-
-> There are many components to add interactivity to hand controls.
-> [controller-cursor](https://github.com/bryik/aframe-controller-cursor-component),
-> [aabb-collider +
-> grab](https://github.com/aframevr/aframe/tree/master/examples/showcase/tracked-controls/components),
-> [super-hands](https://github.com/wmurphyrd/aframe-super-hands-component). For
-> this lesson, we'll use controller-cursor that acts as a pointing laser for
-> each hand. Continue from your previous Glitch.
-
-1. Add `controller-cursor` component to both hands
-2. In the `controller-event-handler` component, change the color of the boxes
-when they are hovered over with the `mouseenter` event, and restore the color
-with the `mouseleave` event
-
-<img class="stretch" data-src="media/img/trackedcontrols2.gif">
-
-<a href="https://aframe-school-hand-controls.glitch.me/solution2.html" target="_blank">View Result</a>  <!-- .element: class="cta-button" -->
+<a href="https://aframe-schools-ar.glitch.me/solution.html" target="_blank">View Result</a>  <!-- .element: class="cta-button" -->
 
 ------
-
 
 <!-- Lessons end here. -->
 
