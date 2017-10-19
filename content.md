@@ -190,7 +190,7 @@ network have access to your local server
 ## Start with *Hello, WebVR*
 
 > A-Frame provides easy-to-use HTML elements for starters called
-[primitives](https://aframe.io/docs/0.7.0/primitives/). In the sections below,
+[primitives](https://aframe.io/docs/0.7.0/introduction/html-and-primitives.html#primitives). In the sections below,
 we'll modify basic meshes through HTML attributes (e.g., change colors,
 positions, rotations, scale) and get a feel for the workflow.
 
@@ -241,7 +241,7 @@ and give it a rotation to see relative rotations
 ## Start with *Hello, WebVR* &mdash; Add Primitives
 
 > Add primitives to the scene by adding HTML elements under `<a-scene>`.  [Read
-> about primitives](https://aframe.io/docs/0.7.0/primitives/).
+> about primitives](https://aframe.io/docs/0.7.0/introduction/html-and-primitives.html#primitives).
 
 <a href="https://glitch.com/~aframe-school-primitives" target="_blank">Remix Lesson on Glitch</a>  <!-- .element: class="cta-button glitch" -->
 
@@ -297,7 +297,7 @@ assets section (pictured above).
 > Hit **`<ctrl> + <alt> + i`** on **any** A-Frame scene to pop open a visual
 > editor, just like your browser's Dev Tools!  Try the Inspector on some of the
 > [homepage examples](https://aframe.io/examples/). [Read about the
-> Inspector](https://aframe.io/docs/master/guides/using-the-aframe-inspector.html).
+> Inspector](https://aframe.io/docs/0.7.0/introduction/visual-inspector-and-dev-tools.html).
 
 <img class="stretch" data-src="media/img/inspector.gif">
 
@@ -523,7 +523,7 @@ and see the box change its color
 > component](https://aframe.io/docs/0.7.0/components/cursor.html) to provide
 > the ability to interact with entities (primarily for smartphones).  [Read
 > about building a 360&deg; image
-> gallery](https://aframe.io/docs/0.7.0/guides/building-with-components.html).
+> gallery](https://aframe.io/docs/0.7.0/guides/building-a-360-image-gallery.html).
 
 <a href="https://glitch.com/~aframe-school-cursor" target="_blank">Remix Lesson on Glitch</a>  <!-- .element: class="cta-button glitch" -->
 
@@ -611,7 +611,7 @@ the animations of the model at once.
 > If you have a model of your own, it can be tricky to upload it to a CDN since
 > it consists of multiple files that reference each other. So far the easiest
 > way we've found is to dump them into a GitHub repo, publish the repo's master
-> branch to GitHub Pages, and use `rawgit.com` to serve them. Alternatively,
+> branch to GitHub Pages, and use [`rawgit.com`](https://rawgit.com/) to serve them. Alternatively,
 > set up Amazon S3. More to come.
 
 ------
