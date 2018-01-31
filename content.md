@@ -394,7 +394,7 @@ and `preset: snow`. Open the Inspector to play with the values!
 2. Include [Animation](https://www.npmjs.com/package/aframe-animation-component). Attach
 animation to the sphere to throb its scale by configuring `animation` component
 with `property: scale`, `loop: true`, and `to: 1.1 1.1 1.1`
-3. Include [Outline Effect](https://www.npmjs.com/package/aframe-outline-effect). Drop in the
+3. Include [Outline Effect](https://www.npmjs.com/package/aframe-outline). Drop in the
 `<script>` and attach the `outline` component to the scene
 
 <a href="https://glitch.com/~aframe-school-registry" target="_blank">Remix Lesson on Glitch</a>  <!-- .element: class="cta-button glitch" -->
