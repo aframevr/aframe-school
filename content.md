@@ -166,7 +166,7 @@ network have access to your local server
 > A-Frame project on a smartphone without having to do the local IP address
 > dance.
 
-1. Download and unzip [ngrok](https://ngrok.com/download/) anywhere
+1. Download and unzip [ngrok](https://ngrok.com/download) anywhere
 2. Run ngrok, providing it the port number of your local server (`./ngrok http 8080`)
 3. In the output, ngrok will give you a URL with a bunch of letters and numbers (e.g., `https://abcdef123456.ngrok.io`)
 4. Open that URL on another device on any network (such as a smartphone or another computer)
