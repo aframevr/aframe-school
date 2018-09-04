@@ -297,7 +297,7 @@ assets section (pictured above).
 > Hit **`<ctrl> + <alt> + i`** on **any** A-Frame scene to pop open a visual
 > editor, just like your browser's Dev Tools!  Try the Inspector on some of the
 > [homepage examples](https://aframe.io/examples/). [Read about the
-> Inspector](https://aframe.io/docs/master/guides/using-the-aframe-inspector.html).
+> Inspector](https://aframe.io/docs/master/introduction/visual-inspector-and-dev-tools.html#using-the-inspector).
 
 <img class="stretch" data-src="media/img/inspector.gif">
 
