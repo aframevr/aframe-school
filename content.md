@@ -611,10 +611,10 @@ the animations of the model at once.
 
 <a href="https://glitch.com/~aframe-school-hand-controls" target="_blank">Remix Lesson on Glitch</a>  <!-- .element: class="cta-button glitch" -->
 
-1. Find `<a-entity id="left">` and add the [hand-controls component](https://aframe.io/docs/0.5.0/components/hand-controls.html)
-configured to the left hand (`hand-controls="left"`)
+1. Find `<a-entity id="left">` and add the [hand-controls component](https://aframe.io/docs/master/components/hand-controls.html)
+configured to the left hand (`hand-controls="hand: left"`)
 2. Find `<a-entity id="right">` and add the hand-controls component
-configured to the right hand (`hand-controls="right"`)
+configured to the right hand (`hand-controls="hand: right"`)
 3. View the result and see the hands moving with pre-recorded motions
 
 <img class="stretch" data-src="media/img/trackedcontrols.gif">
