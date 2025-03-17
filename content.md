@@ -115,10 +115,10 @@ section **&darr;**. Else, head **&rarr;** to start with A-Frame!
 
 <img class="stretch" data-src="media/img/webdevenv1.jpg">
 
-1. **Get a text editor:** [Atom](https://atom.io) is a good one to start with
+1. **Get a text editor:** [VS Code](https://code.visualstudio.com) is a good one to start with
 2. **Set up a local server:** Download and run [Mongoose
 Server](https://www.cesanta.com/products/binary) or run `python -m
-SimpleHTTPServer` in a terminal
+http.server` in a terminal
 3. **Create a file `index.html`** and copy A-Frame code from the Glitch samples
 4. **Run a local server** in the same directory as the HTML file
 5. **Open the local server's URL** in your browser (e.g., `http://localhost:8000`)
@@ -130,7 +130,7 @@ network have access to your local server
 
 ## [Optional] Set Up a Web Development Environment &mdash; Get a Text Editor
 
-> [Atom](https://atom.io) is a good text editor to start if you don't have one.
+> [VS Code](https://code.visualstudio.com) is a good text editor to start if you don't have one.
 > Other popular options are [Notepad++](https://notepad-plus-plus.org/),
 > [Sublime](https://www.sublimetext.com/), [Brackets](http://brackets.io/), or
 > [vim](http://www.vim.org/download.php).
@@ -150,7 +150,7 @@ network have access to your local server
   </div>
   <div>
     <img data-src="https://www.python.org/static/opengraph-icon-200x200.png">
-    <code>python -m SimpleHTTPServer 8080</code>
+    <code>python -m http.server 8080</code>
   </div>
   <div>
     <img data-src="https://www.echosteg.com/images/blog/standard/nodejs_logo.png">
